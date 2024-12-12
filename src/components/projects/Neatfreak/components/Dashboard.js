@@ -20,7 +20,7 @@ function Dashboard() {
                   Let us handle
                   <br />
                   <div className="">
-                  the <span className="italics2">cleaningggggggg</span> stuff.
+                  the <span className="italics2">cleaning</span> stuff.
                   </div>
                 </p>
                 <p className="underTitle">
@@ -30,7 +30,7 @@ function Dashboard() {
                 </p>
                 <div className="btnMarg ">
                   <Link to="/request" className="btn btn-outline-secondary requestBox btnScale mt-3">
-                    <span className="">Request a Free Estimateeeeeeeee!</span>
+                    <span className="">Request a Free Estimate!</span>
                   </Link>
                 </div>
               </div>

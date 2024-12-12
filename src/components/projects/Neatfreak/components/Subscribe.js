@@ -8,10 +8,10 @@ import Footer from "./Footer";
 import Chatbot from "./Chatbot";
 
 function Subscribe() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   function cancelAndReturn() {
-    history(-1);
+    navigate(-1);
   }
 
   const keyValues = {

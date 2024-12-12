@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.side-bar {
+  background-color: #f7da36;
+  color: #056937;
+ 
+}
+.textGreen{
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.borderOne{
+border: solid;
+background-color: #000000;
+padding: 5px;
+color: #f7da36;
+font-style: italic;
+padding-left: 10px;
+padding-right: 10px;
+box-shadow: 10px 5px 5px black;
+}
+
+@media (min-width: 576px) {
+  .side-bar{
+    margin-left: 0px;
+    padding-right: 250px;
+    overflow:hidden;
+    position: block;
+  }
+}
+
