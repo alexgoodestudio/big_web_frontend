@@ -14,13 +14,14 @@ function Reservations({ setError, reservations = [] }) {
       try {
         setError(null);
         await cancelReservation(reservation_id, abortController.signal);
-        navigate.go(0)
+        navigate(0); // Reload the page
       } catch (error) {
-        setError(error);
+        const errorMessage = error.response?.data?.error || error.message || "An error occurred.";
+        setError(errorMessage);
       }
     }
   };
-  
+
   const rows = reservations.length ? (
     <table className="table border ">
       <thead>
@@ -42,7 +43,7 @@ function Reservations({ setError, reservations = [] }) {
             <tr key={reservation.reservation_id}>
               <td>{reservation.reservation_id}</td>
               <td>
-              {reservation.last_name}, {reservation.first_name}
+                {reservation.last_name}, {reservation.first_name}
               </td>
               <td>{reservation.mobile_number}</td>
               <td>{reservation.reservation_date}</td>
@@ -54,23 +55,18 @@ function Reservations({ setError, reservations = [] }) {
               <td>
                 {reservation.status === "booked" && (
                   <>
-                 
                     <Link
                       className="btn btn-outline-primary width d-flex"
-                      to={`/reservations/${reservation.reservation_id}/seat`}
+                      to={`/reservation/reservations/${reservation.reservation_id}/seat`}
                     >
                       Seat
                     </Link>
                     <Link
                       className="btn btn-outline-secondary width d-flex"
-                    
-                      to={{
-                        pathname: `/reservations/${reservation.reservation_id}/edit`,
-                      }}
+                      to={`/reservation/reservations/${reservation.reservation_id}/edit`}
                     >
                       Edit
                     </Link>
-                   
                     <button
                       className="btn btn-outline-danger width slide-in d-flex"
                       data-reservation-id-cancel={reservation.reservation_id}
@@ -78,7 +74,6 @@ function Reservations({ setError, reservations = [] }) {
                     >
                       Cancel
                     </button>
-                    
                   </>
                 )}
               </td>

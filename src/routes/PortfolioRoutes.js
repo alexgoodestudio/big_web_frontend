@@ -6,8 +6,8 @@ import ReservationLayout from "../components/projects/Reservation/src/layout/Lay
 function PortfolioRoutes() {
   return (
     <Routes>
-      <Route path="/neatfreak/" element={<NeatfreakLayout />} />
-      <Route path="/reservation/" element={<ReservationLayout />} />
+      <Route path="/neatfreak/*" element={<NeatfreakLayout />} />
+      <Route path="/reservation/*" element={<ReservationLayout />} />
     </Routes>
   );
 }

@@ -8,17 +8,21 @@ import EditForm from "../components/EditForm";
 import TableForm from "../components/TableForm";
 import SeatPage from "../components/SeatPage";
 
-function ReservationRoutes() { 
+function ReservationRoutes() {
   return (
     <Routes>
-      <Route path="reservation/" element={<Navigate to="/dashboard" />} />
-      <Route path="reservation/reservations" element={<Navigate to="/dashboard" />} />
-      <Route path="reservation/dashboard" element={<Dashboard />} />
-      <Route path="reservation/reservations/new" element={<NewForm />} />
+      {/* Default route for /reservation */}
+      <Route index element={<Navigate to="dashboard" />} />
+
+      {/* Specific routes for reservation-related pages */}
+      <Route path="dashboard" element={<Dashboard />} />
       <Route path="reservation/reservations/:reservation_id/edit" element={<EditForm />} />
-      <Route path="reservation/search" element={<Search />} />
-      <Route path="reservation/tables/new" element={<TableForm />} />
-      <Route path="reservation/reservations/:reservation_id/seat" element={<SeatPage />} />
+      <Route path="reservations/:reservation_id/edit" element={<EditForm />} />
+      <Route path="search" element={<Search />} />
+      <Route path="tables/new" element={<TableForm />} />
+      <Route path="reservations/:reservation_id/seat" element={<SeatPage />} />
+
+      {/* Catch-all for unmatched paths */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
