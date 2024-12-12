@@ -1,3 +1,14 @@
 .PortfolioNav {
     background-color: #ced6e4;
   }
+
+.agsLogo{
+  width: 7%;
+}
+
+@media screen and (max-width: 768px) {
+  .agsLogo{
+    width: 15%;
+  }
+
+}

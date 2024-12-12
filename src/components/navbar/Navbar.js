@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../../style.css"
+import Logo from "./Logo.jpg"
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,9 @@ function NavBar() {
 
   return (
     <nav className="navbar PortfolioNav navbar-expand-lg navbar-light px-3">
-      <a className="navbar-brand" href="/">MyApp</a>
+      <a className="navbar-brand" href="/">
+      <img src={Logo} className='agsLogo'/>
+      </a>
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav me-auto">
           <li className="nav-item">

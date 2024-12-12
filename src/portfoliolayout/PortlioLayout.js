@@ -5,7 +5,7 @@ function PortfolioLayout() {
     <div>
       <div className="row">
         <div className="col-lg-6 p-5">
-        <h1 className="mb-5">Alex Goode</h1>
+       
         <h4>React/ Node Developer</h4>
         <p>
           Software Engineer experienced in Full Stack Development
