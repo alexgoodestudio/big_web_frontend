@@ -6,7 +6,7 @@ function ReservationForm({ title, error, formData, handleChange,handleSubmit }) 
   const navigate = useNavigate();
 
   function cancelAndReturn() {
-    navigate.goBack();
+    navigate(-1);
   }
 
   return (

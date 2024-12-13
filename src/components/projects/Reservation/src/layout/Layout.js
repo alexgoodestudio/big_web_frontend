@@ -4,23 +4,22 @@ import Routes from "./Routes";
 
 import "./Layout.css";
 
-/**
- * Defines the main layout of the application.
- *
- * You will not need to make changes to this file.
- *
- * @returns {JSX.Element}
- */
 function Layout() {
   return (
     <div>
       <div className="row h-100">
-        <div className="col-lg-2 side-bar">
+        {/* Sidebar */}
+        <div className="col-2 col-lg-1 d-none d-sm-block">
           <Menu />
         </div>
-        <div className="col">
+
+        {/* Routes */}
+        <div className="col-12 col-sm-10 col-lg-10">
           <Routes />
         </div>
+
+        {/* Spacer */}
+        <div className="d-none d-lg-block col-lg-1"></div>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ function Tables({ tables = [] }) {
   async function handleSubmit(tableId) {
     const abortController = new AbortController();
     await finishTableStatus(tableId, abortController.signal);
-    navigate.go();
+    navigate(-1);
   }
 
   const list = tables.length ? (

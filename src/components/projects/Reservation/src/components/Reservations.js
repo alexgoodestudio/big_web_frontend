@@ -16,17 +16,23 @@ function Reservations({ setError, reservations = [] }) {
         await cancelReservation(reservation_id, abortController.signal);
         navigate(0); // Reload the page
       } catch (error) {
-        const errorMessage = error.response?.data?.error || error.message || "An error occurred.";
+        const errorMessage =
+          error.response?.data?.error || error.message || "An error occurred.";
         setError(errorMessage);
       }
     }
+  };
+
+  const formatTime = (time) => {
+    // Assumes time is in "HH:mm:ss" format
+    return time.slice(0, 5); // Extract "HH:mm"
   };
 
   const rows = reservations.length ? (
     <table className="table border ">
       <thead>
         <tr>
-          <th>Reservation ID</th>
+          <th>ID#</th>
           <th>Name</th>
           <th>Mobile Number</th>
           <th>Date</th>
@@ -47,7 +53,7 @@ function Reservations({ setError, reservations = [] }) {
               </td>
               <td>{reservation.mobile_number}</td>
               <td>{reservation.reservation_date}</td>
-              <td>{reservation.reservation_time}</td>
+              <td>{formatTime(reservation.reservation_time)}</td>
               <td>{reservation.people}</td>
               <td data-reservation-id-status={reservation.reservation_id}>
                 {reservation.status}

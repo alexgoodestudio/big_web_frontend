@@ -11,50 +11,44 @@ import "./Layout.css";
 
 function Menu() {
   return (
-    <nav className=" navbar align-items-start  p-0">
-      <div className="container-fluid d-flex  flex-column p-0">
+    <nav className=" navbar align-items-start">
+      <div className="bg-secondary">
         <Link
-          className=" navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
+          className=" sidebar-brand text-light"
           to="/"
         >
-          <div className="sidebar-brand-text textGreen mt-3 borderOne mx-3 ">
-            <span>ServiceSync</span>
+          <div className=" mt-3 mb-3 borderOne logoText">
+            <span>Dash.com</span>
           </div>
         </Link>
         <hr className=" my-0" />
-        <ul className="nav navbar-nav ">
-          <li className="nav-item ">
-            <Link className=" d-flex nav-link textGreen" to="/dashboard">
+        <ul className=" navbar-nav ">
+          <li className="nav-item  btn btn-outline-secondary ">
+            <Link className=" nav-link text-light" to="/reservation/dashboard">
               <span className="mt-1 oi oi-dashboard" />
-              &nbsp;Dashboard
+              Dashboard
             </Link>
           </li>
-          <li className="nav-item ">
-            <Link className="  nav-link textGreen" to="/search">
+          <li className="nav-item btn btn-outline-secondary ">
+            <Link className="nav-link text-light" to="/reservation/search">
               <span className="oi oi-magnifying-glass "/>
-              &nbsp;Search
+              Search
             </Link>
           </li>
-          <li className="nav-item ">
-            <Link className="  nav-link textGreen" to="/reservations/new">
+          <li className="nav-item btn btn-outline-secondary  ">
+            <Link className="  nav-link text-light" to="/reservation/reservations/new">
               <span className="oi oi-plus " />
-              &nbsp;New Reservation
+              Booking
             </Link>
           </li>
-          <li className="nav-item ">
-            <Link className="  nav-link textGreen" to="/tables/new">
+          <li className="nav-item btn btn-outline-secondary ">
+            <Link className="nav-link text-light" to="/reservation/tables/new">
               <span className="oi oi-layers " />
-              &nbsp;New Table
+              New Table
             </Link>
           </li>
         </ul>
-        <div className="text-center  d-none d-md-inline">
-          <button
-            className="btn rounded-circle  border-0"
-            id="sidebarToggle"
-            type="button"
-          />
-        </div>
+
       </div>
     </nav>
   );

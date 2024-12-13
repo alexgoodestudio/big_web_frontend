@@ -78,14 +78,10 @@ export async function updateEstimate(estimate_id, formData, signal) {
       body: JSON.stringify({ data: formData }),
       signal,
   };
-
   // Assuming the API response contains the updated data
   const response = await fetchJson(url, options);
   return response.data;  // Adjust this based on your API response structure
 }
-
-
-
 
 export async function readEstimate(estimate_id, signal) {
   const url = `${API_BASE_URL}/estimates/${estimate_id}`;

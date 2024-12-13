@@ -14,8 +14,8 @@ function ReservationRoutes() {
       {/* Default route for /reservation */}
       <Route index element={<Navigate to="dashboard" />} />
 
-      {/* Specific routes for reservation-related pages */}
       <Route path="dashboard" element={<Dashboard />} />
+      <Route path="reservations/new" element={<NewForm />}/>
       <Route path="reservation/reservations/:reservation_id/edit" element={<EditForm />} />
       <Route path="reservations/:reservation_id/edit" element={<EditForm />} />
       <Route path="search" element={<Search />} />

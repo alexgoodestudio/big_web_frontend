@@ -58,10 +58,10 @@ function Dashboard() {
   }
 
   return (
-    <div>
-      <img src={image1} className="img-fluid width6" alt="banner" />
-      <div className="marginLeft">
-        <div className="greyBor">
+    <div >
+      <img src={image1} className="img-fluid" alt="banner" />
+      
+      
           <div className="display mt-3">
             <h1>
               <span className="italics1">Seamless </span> Reservations,
@@ -79,43 +79,47 @@ function Dashboard() {
             team with the tools to manage reservations, and table allocations
             with unparalleled ease.
           </p>
-        </div>
-        <div className=" row  mb-1">
-          <div className="col-6 d-flex p-2 pt-4">
+    
+        <div className="  mb-1">
+          <div className=" d-flex p-2 pt-4">
             <div>
-              <h6 className="text-dark ml-4">Reservations for:</h6>
-              <h4 className="text-dark paddingNegative ">
+              <h6 className=" ml-4">Reservations for:</h6>
+              <h4 className="  ">
                 {" "}
                 {dayOfWeek},{" "}
                 <span className="ml-1 underline"> {currentDate}</span>{" "}
               </h4>
               <div className="display-inline  ml-4 slide-in">
-                <button
-                  className=" btn btn-outline-danger width2"
-                  onClick={handlePreviousDay}
-                >
-                  Previous
-                </button>
-                <button
-                  className="ml-1  btn btn-outline-primary width"
-                  onClick={handleToday}
-                >
-                  Today
-                </button>
-                <button
-                  className="ml-1  btn btn-outline-dark width"
-                  onClick={handleNextDay}
-                >
-                  Next
-                </button>
+                <div className="d-flex  align-items-start ml-4 slide-in">
+                  <button
+                    className="btn btn-outline-danger width2 mb-2"
+                    onClick={handlePreviousDay}
+                  >
+                    Previous
+                  </button>
+                  <button
+                    className="btn btn-outline-primary width mb-2"
+                    onClick={handleToday}
+                  >
+                    Today
+                  </button>
+                  <button
+                    className="btn btn-outline-dark width"
+                    onClick={handleNextDay}
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
               <br />
             </div>
           </div>
         </div>
-      </div>
-      <div className="row contain ">
+ 
 
+      <hr />
+
+      <div className="row contain ">
         <div className="col-sm-12 col-md-12 col-lg-7 col-xl-7 ">
           <div>
             <ErrorAlert error={reservationsError} />
@@ -123,15 +127,14 @@ function Dashboard() {
               <Reservations
                 setError={setReservationsError}
                 reservations={reservations}
-                
               />
             </div>
           </div>
         </div>
-     
+
         <div className=" col-xl-4 col-lg-4 col-md-12 col-sm-12 slide-in table-responsive">
-          <Tables tables={tables}/>
-        </div> 
+          <Tables tables={tables} />
+        </div>
         <div className="col-lg-1"></div>
       </div>
     </div>

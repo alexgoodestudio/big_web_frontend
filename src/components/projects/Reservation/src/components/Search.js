@@ -9,7 +9,7 @@ function Search() {
   const navigate = useNavigate();
 
   function cancelAndReturn() {
-    navigate.go(0);
+    navigate(-1);
   }
 
   const handleSubmit = async (event) => {

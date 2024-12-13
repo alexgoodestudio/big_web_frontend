@@ -12,7 +12,7 @@ function TableForm(){
     });
     
     function cancelAndReturn(){
-        navigate.goBack()
+      navigate(-1)
       }
 
       function handleChange(event) {
@@ -35,7 +35,7 @@ function TableForm(){
         console.log("tableForm", tableForm)
         try {
           await createTable(tableForm, abortController.signal)
-          navigate.push("/")
+          navigate(-1)
         } catch(error) {
           setError(error)
         }
@@ -49,7 +49,7 @@ function TableForm(){
             <input placeholder="Table Name" onChange={handleChange} id= "table_name" className="" name="table_name"></input>
             <input placeholder="Capacity" onChange={handleChange} id= "capacity" className="" name="capacity"></input> 
             <br/>
-            <button type="submit" className="btn btn-primary mt-2" >Save</button>
+            <button type="submit" onChange={cancelAndReturn} className="btn btn-primary mt-2" >Save</button>
             <button className="btn btn-secondary mt-2" onClick={cancelAndReturn} >Cancel</button>
         </form>
         </>

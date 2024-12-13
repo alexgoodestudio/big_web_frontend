@@ -42,9 +42,6 @@
 .br5{
   border-radius: 15%;
 }
-.richmond{
-  width: 82%;
-}
 
 .chatbot-interface{
   position: absolute;
@@ -601,15 +598,10 @@ font-size: 34pt;
   background-color: #e1e9f6;
   
 }
-.reduce3 {
-  font-size: 28pt;
-}
+
 
 @media only screen and (max-width: 600px) {
   
-.richmond{
-  width: 100%;
-}  
 
   .pic {
     visibility: hidden;
@@ -627,9 +619,6 @@ font-size: 34pt;
     border-radius: 20px;
   }
 
-  .reduce2 {
-    font-size: 16pt;
-  }
 
   .mb2{
     margin-bottom: 3%;
@@ -651,10 +640,6 @@ font-size: 34pt;
   .vid {
     max-width: 100%;
     height: auto;
-  }
-  .reduce {
-    font-size: 12pt;
-    bottom: 5%;
   }
 
   .mobileBringLeft {
