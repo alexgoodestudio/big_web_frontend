@@ -18,13 +18,14 @@ function Theater({ theater }) {
           <div className="row">
             {theater.movies.map((movie) => (
               <div key={movie.movie_id} className="col-6 col-md-4 col-lg-2">
-                <Link to={`/movies/${movie.movie_id}`}>
-                  <img
-                    alt={`${movie.title} Poster`}
-                    src={movie.image_url}
-                    className="w-100"
-                  />
-                </Link>
+<Link to={`/movie/movies/${movie.movie_id}`}>
+  <img
+    alt={`${movie.title} Poster`}
+    src={movie.image_url}
+    className="w-100"
+  />
+</Link>
+                
               </div>
             ))}
           </div>

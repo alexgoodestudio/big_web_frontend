@@ -23,7 +23,7 @@ function DetailedMovie({ movie }) {
           <strong>Rating:</strong> {movie.rating}
         </p>
         <AverageRating reviews={movie.reviews} />
-        <Link to={`/movies/${movie.movie_id}`} className="btn btn-primary">
+        <Link to={`/movie/movies/${movie.movie_id}`} className="btn btn-primary">
           See More
         </Link>
       </aside>

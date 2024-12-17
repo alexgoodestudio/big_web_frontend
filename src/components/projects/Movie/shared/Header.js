@@ -15,7 +15,7 @@ function Header() {
   >
 
       <HeaderNav />
-      <div className="container">
+      <div className="container my-5">
         <h1 className="display-4">Find your next favorite movie!</h1>
         <p className="lead">
           <em>WeLoveMovies</em> is your source for finding reviews of movies in

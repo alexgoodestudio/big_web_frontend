@@ -36,7 +36,7 @@ function MoviesList() {
   ));
 
   return (
-    <main className="container">
+    <main className="container mt-3">
       <ErrorAlert error={error} />
       <h2 className="font-poppins">Now Showing</h2>
       <hr />

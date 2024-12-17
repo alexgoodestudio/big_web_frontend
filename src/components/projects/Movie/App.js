@@ -8,6 +8,7 @@ import TheaterList from "./theaters/TheaterList";
 function App() {
   return (
     <>
+    <div className="bg-white">
       <Header />
       <Routes>
         <Route path="/" element={<MoviesList />} />
@@ -15,6 +16,7 @@ function App() {
         <Route path="/movies/:movieId" element={<FullMovie />} />
         <Route path="/theaters" element={<TheaterList />} />
       </Routes>
+      </div>
     </>
   );
 }

@@ -527,10 +527,12 @@ font-size: 34pt;
 .nav {
   background-color: #ffffff;
   color: #ffffff;
-  box-shadow: 10px 5px 5px rgb(206, 206, 206);
   margin-bottom: 2%;
 }
+.shadow{
+  box-shadow: 10px 5px 5px rgb(206, 206, 206);
 
+}
 .requestBox{
   box-shadow: 10px 5px 5px rgb(235, 235, 235);
 

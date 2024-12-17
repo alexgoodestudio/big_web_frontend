@@ -9,7 +9,7 @@ function NavBar() {
   const navigate = useNavigate();
 
   function goToHome() {
-    navigate("/");
+    navigate("/neatfreak");
   }
 
   const closeDropdown = () => {
@@ -17,7 +17,7 @@ function NavBar() {
   };
 
   return (
-    <div className="nav row">
+    <div className="nav shadow row">
       <div className="row bg3  mb-2 p-3 pb-2 topNav space text-center">
         <div className="col-sm-4 "></div>
         <div className="col-sm-4  text-black topNav  ">

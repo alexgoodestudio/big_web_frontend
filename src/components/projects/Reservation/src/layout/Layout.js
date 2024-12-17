@@ -6,7 +6,7 @@ import "./Layout.css";
 
 function Layout() {
   return (
-    <div>
+    <div className="bg-white">
       <div className="row h-100">
         {/* Sidebar */}
         <div className="col-2 col-lg-1 d-none d-sm-block">

@@ -5,7 +5,7 @@ import NeatfreakRoutes from "./NeatfreakRoutes";
 
 function Layout() {
     return (      
-            <div className="row h-100 ">
+            <div className="row h-100 bg-white">
                 <div className="col-lg-12">
                         <NavBar />
                         <NeatfreakRoutes />

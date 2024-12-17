@@ -11,14 +11,14 @@ import "./Layout.css";
 
 function Menu() {
   return (
-    <nav className=" navbar align-items-start">
+    <nav className=" navbar">
       <div className="bg-secondary">
         <Link
           className=" sidebar-brand text-light"
-          to="/"
+          to="/reservation"
         >
-          <div className=" mt-3 mb-3 borderOne logoText">
-            <span>Dash.com</span>
+          <div className=" mt-3 mb-3 align-content-center borderOne logo-container">
+            <span>Home</span>
           </div>
         </Link>
         <hr className=" my-0" />

@@ -1,0 +1,18 @@
+.text-white h5 {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .text-white a {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .text-white a:hover {
+    color: #f0db4f; /* Playful hover color */
+  }
+  
+  .row .col-6:hover h5 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
