@@ -32,10 +32,10 @@ function NavBar() {
               Projects
             </a>
             <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-              <li><a className="dropdown-item" href="/flashcard">Flashcard</a></li>
-              <li><a className="dropdown-item" href="/movie">Movie</a></li>
-              <li><a className="dropdown-item" href="/neatfreak">NeatFreak</a></li>
-              <li><a className="dropdown-item" href="/reservation">Reservation</a></li>
+              <li><a className="dropdown-item" href="/neatfreak">NeatFreak Cleaning Services</a></li>
+              <li><a className="dropdown-item" href="/reservation"> BookTableNow</a></li>
+              <li><a className="dropdown-item" href="/movie">MovieGo</a></li>
+              {/* <li><a className="dropdown-item" href="/flashcard">Flashcard App (Promineo Tech)</a></li> */}
             </ul>
           </li>
           <li className="nav-item">

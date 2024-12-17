@@ -58,11 +58,11 @@ function Dashboard() {
   }
 
   return (
-    <div >
+    <div>
       <img src={image1} className="img-fluid" alt="banner" />
       
-      
-          <div className="display mt-3">
+      <div className="mobileReservationsMargin">
+          <div className="display mt-3 ">
             <h1>
               <span className="italics1">Seamless </span> Reservations,
             </h1>
@@ -70,7 +70,7 @@ function Dashboard() {
             <img src={arrow} className="ml-3 mr-2 mb-2 width4" alt="arrow" />
 
             <h1 className="">
-              <span className="italics2"> Exceptional</span> Service.
+              Exceptional Service.
             </h1>
           </div>
 
@@ -136,6 +136,7 @@ function Dashboard() {
           <Tables tables={tables} />
         </div>
         <div className="col-lg-1"></div>
+      </div>
       </div>
     </div>
   );

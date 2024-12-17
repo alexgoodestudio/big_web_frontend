@@ -23,11 +23,7 @@ h4{
   font-style: italic;
   margin-right: 12px;
 }
-.italics2 {
-  font-style: italic;
-  margin-left: 12px;
-  margin-right: 12px;
-}
+
 .width4{
   width: 100px;
 }
@@ -75,6 +71,9 @@ p {
     -webkit-overflow-scrolling: touch; 
     overflow-x: scroll; 
   }
+  .mobileReservationsMargin{
+    margin: 5%;
+  }
   /* .contain {
     padding-left: 10%;
     padding-right: 10%;
@@ -103,8 +102,5 @@ p {
     display: flex;
   }
 
-  .italics2{
-    margin-left: 70px;
-  }
 
 }
