@@ -11,7 +11,7 @@ function App() {
     <div className="bg-white">
       <Header />
       <Routes>
-        <Route path="/" element={<MoviesList />} />
+        <Route path="/*" element={<MoviesList />} />
         <Route path="/movies" element={<DetailedMoviesList />} />
         <Route path="/movies/:movieId" element={<FullMovie />} />
         <Route path="/theaters" element={<TheaterList />} />

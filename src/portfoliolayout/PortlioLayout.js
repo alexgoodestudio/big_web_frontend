@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, useOutlet } from "react-router-dom";
+import {  useOutlet } from "react-router-dom";
 import Img from "../img/8.png";
 import NoProjectScreen from "./NoProjectScreen";
 import "../style.css";
