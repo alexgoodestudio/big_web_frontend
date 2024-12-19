@@ -12,6 +12,24 @@ font-style: italic;
   align-items: center;     /* Vertically center */
   text-align: center;      /* Ensure text itself is centered */
 }
+.navbar {
+  width: 100%;
+}
+
+.nav-link {
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.sidebar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin: 0.5rem 0; /* Optional: Add spacing between buttons */
+}
+
 
 /* Adjust text size and spacing for logo */
 @media (min-width: 576px) {

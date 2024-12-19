@@ -1,3 +1,4 @@
+
 .text-white h5 {
     font-weight: bold;
     margin-top: 10px;
@@ -15,4 +16,9 @@
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
   }
+  .vertical-line {
+    border-left: 5px solid #7b7b7b; /* Adds a black vertical line */
+    padding-left: 15px; /* Space between the line and text */
+  }
+  
   

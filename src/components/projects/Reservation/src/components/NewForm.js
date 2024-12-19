@@ -36,9 +36,8 @@ function NewForm() {
     event.preventDefault();
     const abortController = new AbortController();
     try {
-      
         await createReservation(formData, abortController.signal);
-        navigate(`/dashboard?date=${formData.reservation_date}`);
+        navigate(`/reservation/dashboard?date=${formData.reservation_date}`);
       } catch (error) {
       setError(error);
     }

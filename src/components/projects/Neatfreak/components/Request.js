@@ -1,7 +1,7 @@
 import React from "react";
 import "./Dashboard.css";
 import { BsCalendar3 } from "react-icons/bs";
-import Image5 from "./Images/9.png";
+// import Image5 from "./Images/9.png";
 import Footer from "./Footer";
 import Chatbot from "./Chatbot";
 import EstimateNewForm from "./EstimateNewForm";
@@ -36,11 +36,11 @@ function Request() {
           </div>
         </div>
         <div className="col-lg-6">
-          <img
+          {/* <img
             src={Image5}
             className=" img-fluid  right-aligned-img pic handMargin"
             alt="..."
-          />
+          /> */}
         </div>
       </div>
       <hr className="mt-5"></hr>

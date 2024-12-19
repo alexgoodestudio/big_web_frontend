@@ -8,17 +8,17 @@ function Layout() {
   return (
     <div className="bg-white">
       <div className="row h-100">
-        {/* Sidebar */}
-        <div className="col-2 col-lg-1 d-none d-sm-block">
+        {/* Navigation Menu */}
+        <div className="d-flex flex-row flex-lg-column col-12 col-lg-1">
           <Menu />
         </div>
 
         {/* Routes */}
-        <div className="col-12 col-sm-10 col-lg-10">
+        <div className="col-12 col-lg-10">
           <Routes />
         </div>
 
-        {/* Spacer */}
+        {/* Spacer (optional for layout symmetry) */}
         <div className="d-none d-lg-block col-lg-1"></div>
       </div>
     </div>

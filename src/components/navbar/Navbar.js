@@ -10,7 +10,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="navbar PortfolioNav navbar-expand-lg navbar-light px-3">
+    <nav className="navbar PortfolioNav navbar-expand-lg navbar-light px-2">
       <a className="navbar-brand" href="/">
       <img src={Logo} className='agsLogo'/>
       </a>
@@ -19,6 +19,7 @@ function NavBar() {
           <li className="nav-item">
             <a className="nav-link" href="/">Home</a>
           </li>
+
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
@@ -32,11 +33,14 @@ function NavBar() {
               Projects
             </a>
             <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-              <li><a className="dropdown-item" href="/neatfreak">NeatFreak Cleaning Services</a></li>
-              <li><a className="dropdown-item" href="/reservation"> BookTableNow</a></li>
-              <li><a className="dropdown-item" href="/movie">MovieGo</a></li>
+              <li><a className="dropdown-item" href="/neatfreak">NeatFreak Cleaning </a></li>
+              <li><a className="dropdown-item" href="/reservation"> Book Table Now</a></li>
+              <li><a className="dropdown-item" href="/movie">Movie Go</a></li>
               {/* <li><a className="dropdown-item" href="/flashcard">Flashcard App (Promineo Tech)</a></li> */}
             </ul>
+          </li>
+            <li className="nav-item">
+            <a className="nav-link" href="/education">Education</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/contact">Contact</a>

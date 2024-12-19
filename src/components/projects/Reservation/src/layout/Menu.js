@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import "./Layout.css";
 
@@ -8,47 +7,42 @@ import "./Layout.css";
  *
  * @returns {JSX.Element}
  */
-
 function Menu() {
   return (
-    <nav className=" navbar">
-      <div className="bg-secondary">
-        <Link
-          className=" sidebar-brand text-light"
+    <nav className="navbar bg-secondary p-0">
+      <div className="container-fluid d-flex flex-row flex-lg-column align-items-stretch">
+        {/* Home Link */}
+        {/* <Link
+          className="sidebar-brand text-light text-center py-2 w-100"
           to="/reservation"
         >
-          <div className=" mt-3 mb-3 align-content-center borderOne logo-container">
-            <span>Home</span>
-          </div>
-        </Link>
-        <hr className=" my-0" />
-        <ul className=" navbar-nav ">
-          <li className="nav-item  btn btn-outline-secondary ">
-            <Link className=" nav-link text-light" to="/reservation/dashboard">
-              <span className="mt-1 oi oi-dashboard" />
-              Dashboard
+          <span>Home</span>
+        </Link> */}
+        <hr className="my-0 w-100" />
+        
+        {/* Navigation Links */}
+        <ul className="navbar-nav d-flex flex-row flex-lg-column w-100 justify-content-between">
+          <li className="nav-item flex-grow-1">
+            <Link className="nav-link btn btn-outline-secondary text-light w-100" to="/reservation/dashboard">
+              <span className="oi oi-dashboard" /> Dashboard
             </Link>
           </li>
-          <li className="nav-item btn btn-outline-secondary ">
-            <Link className="nav-link text-light" to="/reservation/search">
-              <span className="oi oi-magnifying-glass "/>
-              Search
+          <li className="nav-item flex-grow-1">
+            <Link className="nav-link btn btn-outline-secondary text-light w-100" to="/reservation/search">
+              <span className="oi oi-magnifying-glass" /> Search
             </Link>
           </li>
-          <li className="nav-item btn btn-outline-secondary  ">
-            <Link className="  nav-link text-light" to="/reservation/reservations/new">
-              <span className="oi oi-plus " />
-              Booking
+          <li className="nav-item flex-grow-1">
+            <Link className="nav-link btn btn-outline-secondary text-light w-100" to="/reservation/reservations/new">
+              <span className="oi oi-plus" /> Booking
             </Link>
           </li>
-          <li className="nav-item btn btn-outline-secondary ">
-            <Link className="nav-link text-light" to="/reservation/tables/new">
-              <span className="oi oi-layers " />
-              New Table
+          <li className="nav-item flex-grow-1">
+            <Link className="nav-link btn btn-outline-secondary text-light w-100" to="/reservation/tables/new">
+              <span className="oi oi-layers" /> New Table
             </Link>
           </li>
         </ul>
-
       </div>
     </nav>
   );
