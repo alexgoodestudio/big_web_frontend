@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import "../../style.css"
 import Logo from "./Logo.jpg"
 
@@ -11,39 +12,38 @@ function NavBar() {
 
   return (
     <nav className="navbar PortfolioNav navbar-expand-lg navbar-light px-2">
-      <a className="navbar-brand" href="/">
-      <img src={Logo} className='agsLogo'/>
-      </a>
+      <Link className="navbar-brand" to="/">
+        <img src={Logo} className='agsLogo' alt="Logo" />
+      </Link>
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav me-auto">
           <li className="nav-item">
-            <a className="nav-link" href="/">Home</a>
+            <Link className="nav-link" to="/">Home</Link>
           </li>
 
           <li className="nav-item dropdown">
-            <a
+            <button
               className="nav-link dropdown-toggle"
-              href="#"
               id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded={isOpen}
               onClick={toggleDropdown}
+              style={{ background: 'none', border: 'none' }}
             >
               Projects
-            </a>
+            </button>
             <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-              <li><a className="dropdown-item" href="/neatfreak">NeatFreak Cleaning </a></li>
-              <li><a className="dropdown-item" href="/reservation"> Book Table Now</a></li>
-              <li><a className="dropdown-item" href="/movie">Movie Go</a></li>
-              {/* <li><a className="dropdown-item" href="/flashcard">Flashcard App (Promineo Tech)</a></li> */}
+              <li><Link className="dropdown-item" to="/neatfreak">NeatFreak Cleaning</Link></li>
+              <li><Link className="dropdown-item" to="/reservation">Book Table Now</Link></li>
+              <li><Link className="dropdown-item" to="/movie">Movie Go</Link></li>
             </ul>
           </li>
-            <li className="nav-item">
-            <a className="nav-link" href="/education">Education</a>
+          <li className="nav-item">
+            <Link className="nav-link" to="/education">Education</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact">Contact</a>
+            <Link className="nav-link" to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
