@@ -14,9 +14,10 @@ import "./style.css"; // Include styles here.
 function NoProjectScreen() {
   return (
     <div className="bg-dark text-white p-5">
-      <h1 className="display-4 text-center mb-4">Tech Stack</h1>
+      <h1 className="display-4 text-center mb-4">My Tech</h1>
+     
       <p className="text-center mb-5">
-        I use these technologies to build scalable, efficient, and modern applications.
+        I like to use these technologies to build solutions-driven applications.
       </p>
 
       <div className="container">
