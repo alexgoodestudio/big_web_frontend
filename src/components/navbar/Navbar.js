@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link
-import "../../style.css"
-import Logo from "./Logo.jpg"
+import { Link } from 'react-router-dom';
+import "../../style.css";
+import Logo from "./Logo.jpg";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Import icons
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,57 +14,73 @@ function NavBar() {
 
   return (
     <nav className="navbar PortfolioNav navbar-expand-lg navbar-light px-2">
-    <Link className="navbar-brand" to="/">
-      <img src={Logo} className='agsLogo' alt="Logo" />
-    </Link>
+      <Link className="navbar-brand" to="/">
+        <img src={Logo} className='agsLogo' alt="Logo" />
+      </Link>
   
-    {/* Add this button for mobile toggling */}
-    <button 
-      className="navbar-toggler" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#navbarSupportedContent" 
-      aria-controls="navbarSupportedContent" 
-      aria-expanded="false" 
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon"></span>
-    </button>
+      {/* Mobile toggler button */}
+      <button 
+        className="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
   
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mx-auto text-center">
-        <li className="nav-item">
-          <Link className="nav-link" to="/">Home</Link>
-        </li>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mx-auto text-center">
+          <li className="nav-item">
+            <Link className="nav-link" to="/">Dashboard</Link>
+          </li>
   
-        <li className="nav-item dropdown">
-          <button
-            className="nav-link dropdown-toggle"
-            id="navbarDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded={isOpen}
-            onClick={toggleDropdown}
-            style={{ background: 'none', border: 'none' }}
+          <li className="nav-item dropdown">
+            <button
+              className="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded={isOpen}
+              onClick={toggleDropdown}
+              style={{ background: 'none', border: 'none' }}
+            >
+              Full-Stack Projects
+            </button>
+            <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
+              <li><Link className="dropdown-item" to="/neatfreak">NeatFreak Cleaning</Link></li>
+              <li><Link className="dropdown-item" to="/reservation">Book Table Now</Link></li>
+              {/* <li><Link className="dropdown-item" to="/movie">WeLoveMovies</Link></li> */}
+            </ul>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/education">Education</Link>
+          </li>
+        </ul>
+  
+        {/* Social media icons */}
+        <div className="d-flex align-items-center">
+          <a 
+            href="https://github.com/alexgoodestudio" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="mx-2 text-dark"
           >
-            Projects
-          </button>
-          <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item" to="/neatfreak">NeatFreak Cleaning</Link></li>
-            <li><Link className="dropdown-item" to="/reservation">Book Table Now</Link></li>
-            <li><Link className="dropdown-item" to="/movie">Movie Go</Link></li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/education">Education</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
+            <FaGithub size={24} />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/alexgoodestudio/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="mx-2 text-dark"
+          >
+            <FaLinkedin size={24} />
+          </a>
+        </div>
+      </div>
+    </nav>
   );
 }
 
