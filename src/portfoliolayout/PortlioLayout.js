@@ -19,7 +19,7 @@ function PortfolioLayout() {
           <p className="justify-text text-white">
             Hi, my name is Alex Goode. I am a Junior Software Engineer experienced in
             Full Stack Development and DevOps with strong background in Customer
-            Service roles. Well-structured in approach to complex coding
+            Service/ Graphic Design roles. Well-structured in approach to complex coding
             problems. Completed Thinkful's (Chegg Skills) Full-Stack Software
             Engineering Immersion Program, and Promineo Tech's Front-End
             Software Development Certification Program. Passionate about keeping
