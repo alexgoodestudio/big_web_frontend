@@ -14,11 +14,22 @@
 .smallfont{
   font-size: 8.4pt;
 }
-
+.fullWidth{
+  width: 55%;
+}
+.DashboardPadding{
+  padding: 8%;
+}
 
 @media screen and (max-width: 768px) {
   .agsLogo{
     width: 15%;
+  }
+  .mobileText{
+    font-size: 10pt;
+  }
+  .mobileWidth{
+    width: 65%;
   }
 
 }

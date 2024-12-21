@@ -5,35 +5,7 @@ function Education() {
   return (
     <div className="row text-white  p-5">
       <div className="col-lg-12 ">
-        <h3 className="display-5 mb-4 ">Education</h3>
-      </div>
-
-
-
-      <div className="col-lg-3 text-white border p-4 ">
-        <div className="vertical-line">
-          <span className="text-bold underline">Certificate</span>
-          <br />
-          Front End Software Development
-          <br />
-          <span className="italics">Promineo Tech</span>
-          <br />
-          12/2022 - 04/2023
-        </div>
-        <br />
-        <p>
-          <br />• Acquired comprehensive knowledge of tech standards, focusing
-          on React, Node.js, Express, Postgres with Knex.js, SQL, REST APIs,
-          JavaScript, HTML/ CSS, testing w/ Mocha + Chai, Data Structures &
-          Algorithms.
-          <br />
-          <br />• Actively engaged with senior engineers and peers to expand
-          proficiency in an agile framework, owning leadership of daily scrum
-          meetings, navigating the full project lifecycle.
-          <br />
-          <br />• Identified and resolved issues in software/ http requests
-          through tracing code and detecting origin of issues.
-        </p>
+        <h6 className="display-6 mb-4 ">Education</h6>
       </div>
 
       <div className=" col-lg-3  bg-white text-dark border p-4 ">
@@ -63,6 +35,34 @@ function Education() {
           interfaces.
         </p>
       </div>
+
+      <div className="col-lg-3 text-white border p-4 ">
+        <div className="vertical-line">
+          <span className="text-bold underline">Certificate</span>
+          <br />
+          Front End Software Development
+          <br />
+          <span className="italics">Promineo Tech</span>
+          <br />
+          12/2022 - 04/2023
+        </div>
+        <br />
+        <p>
+          <br />• Acquired comprehensive knowledge of tech standards, focusing
+          on React, Node.js, Express, Postgres with Knex.js, SQL, REST APIs,
+          JavaScript, HTML/ CSS, testing w/ Mocha + Chai, Data Structures &
+          Algorithms.
+          <br />
+          <br />• Actively engaged with senior engineers and peers to expand
+          proficiency in an agile framework, owning leadership of daily scrum
+          meetings, navigating the full project lifecycle.
+          <br />
+          <br />• Identified and resolved issues in software/ http requests
+          through tracing code and detecting origin of issues.
+        </p>
+      </div>
+
+
 
       <div className="col-lg-3   p-3"></div>
     </div>

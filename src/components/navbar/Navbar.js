@@ -13,7 +13,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="navbar PortfolioNav navbar-expand-lg navbar-light px-2">
+    <nav className="navbar PortfolioNav navbar-expand-lg navbar-light px-4">
       <Link className="navbar-brand" to="/">
         <img src={Logo} className='agsLogo' alt="Logo" />
       </Link>
@@ -31,7 +31,7 @@ function NavBar() {
         <span className="navbar-toggler-icon"></span>
       </button>
   
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div className="collapse navbar-collapse " id="navbarSupportedContent">
         <ul className="navbar-nav mx-auto text-center">
           <li className="nav-item">
             <Link className="nav-link" to="/">Dashboard</Link>
