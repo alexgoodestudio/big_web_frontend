@@ -20,6 +20,13 @@
 .DashboardPadding{
   padding: 8%;
 }
+.background {
+  object-position: center; 
+  width: 100%;
+}
+.rounded2{
+  border-radius: 50px;
+}
 
 @media screen and (max-width: 768px) {
   .agsLogo{
@@ -29,7 +36,9 @@
     font-size: 10pt;
   }
   .mobileWidth{
-    width: 65%;
+    width: 60%;
   }
-
+  .background {
+    object-position: center; /* Center the image for smaller screens */
+  }
 }
