@@ -28,7 +28,7 @@ function PortfolioLayout() {
             which can be found in my Resume linked beneath my portfolio picture,
             I have become well-structured in approach to complex coding and
             workplace challenges. Over the past few years, I have completed
-            Thinkful's (Chegg Skills) Full-Stack Software Engineering Immersion
+            Chegg Skills (Thinkful) Full-Stack Software Engineering Immersion
             Program, and Promineo Tech's Front-End Software Development
             Certification Program. Passionate about keeping up with latest tech
             and design trends. I am flexible and open to relocation for the
@@ -38,7 +38,7 @@ function PortfolioLayout() {
 
         {/* Image and Button Section */}
         <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center">
-          <img src={Img} className="img-fluid w-50 rounded mb-4" alt="img" />
+          <img src={Img} className="img-fluid w-50 rounded mt-4 mb-4" alt="img" />
           <a
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
