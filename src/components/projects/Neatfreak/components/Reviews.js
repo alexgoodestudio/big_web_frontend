@@ -11,7 +11,7 @@ function Reviews() {
         <div className="col-lg-3 "> </div>
         <div className="col-lg-6">
           <div className="display-5 mt-5">
-              <span className="italics ">Why Hire Us</span>
+              <span className="italics ">Why Hire Us?</span>
        
             <hr ></hr>
           </div>
@@ -30,19 +30,6 @@ function Reviews() {
           </p>
           <div className="px-lg-3 ">
             <figure className="mt-5">
-              <blockquote className=" ">
-                <p>
-                  {" "}
-                  "Love NeatFreak Cleaning Services! They use awesome eco
-                  friendly products and are super flexible with scheduling "
-                </p>
-              </blockquote>
-              <figcaption className="blockquote-footer">
-                review by: <cite title="Source Title">Karen R</cite>
-              </figcaption>
-            </figure>
-            <hr></hr>
-            <figure>
               <blockquote className="">
                 <p>
                   {" "}
@@ -52,7 +39,7 @@ function Reviews() {
                 </p>
               </blockquote>
               <figcaption className="blockquote-footer">
-                review by: <cite title="Source Title">Celia V</cite>
+                review by: <cite title="Source Title">Alex S</cite>
               </figcaption>
             </figure>
             <hr></hr>
@@ -60,9 +47,9 @@ function Reviews() {
               <blockquote className="">
                 <p>
                   {" "}
-                  "I booked a one-time cleaning service after a party, and they
+                  "I booked a one-time cleaning service after a supper party, and they
                   made it spotless. Attention to detail is impressive. Planning
-                  to set up a monthly cleaning schedule ."
+                  to set up a monthly cleaning schedule."
                   <Link
                     to="/neatfreak/login"
                     className="link marginNav text-light link-hover "
@@ -72,7 +59,7 @@ function Reviews() {
                 </p>
               </blockquote>
               <figcaption className="blockquote-footer">
-                review by: <cite title="Source Title">Alex G</cite>
+                review by: <cite title="Source Title">Gertie G </cite>
               </figcaption>
             </figure>
           </div>

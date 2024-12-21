@@ -4,6 +4,7 @@ import Image6 from "./Images/a-min.png";
 import "./Dashboard.css";
 import Chatbot from "./Chatbot";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "../../../../portfoliolayout/Footer";
 
 function Dashboard() {
   return (
@@ -44,6 +45,7 @@ function Dashboard() {
         <Chatbot />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

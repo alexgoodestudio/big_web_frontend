@@ -8,14 +8,21 @@ import {
   FaCss3Alt,
   FaBootstrap,
 } from "react-icons/fa";
-import { SiExpress, SiPostgresql, SiPostman, SiJest, SiMocha } from "react-icons/si";
-import "./style.css"; // Include styles here.
+import {
+  SiExpress,
+  SiPostgresql,
+  SiPostman,
+  SiJest,
+  SiMocha,
+} from "react-icons/si";
+import "./style.css"; 
+import Footer from "./Footer";
 
 function NoProjectScreen() {
   return (
     <div className="bg-dark text-white p-5">
-      <h1 className="display-4 text-center mb-4">Current Stack</h1>
-     
+      <h4 className=" text-center mb-4 underline">Current Stack</h4>
+
       <p className="text-center mb-5">
         I have used these technologies thoughout most of my projects.
       </p>
@@ -23,64 +30,64 @@ function NoProjectScreen() {
       <div className="container">
         <div className="row text-center gy-4">
           {/* Node.js */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <FaNodeJs size={60} className="mb-2 text-success" />
-            <h5>Node.js</h5>
+            <h6>Node.js</h6>
           </div>
           {/* Express */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <SiExpress size={60} className="mb-2 text-light" />
-            <h5>Express.js</h5>
+            <h6>Express.js</h6>
           </div>
           {/* JavaScript */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <FaJs size={60} className="mb-2 text-warning" />
-            <h5>JavaScript</h5>
+            <h6>JavaScript</h6>
           </div>
           {/* React */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <FaReact size={60} className="mb-2 text-info" />
-            <h5>React</h5>
+            <h6>React</h6>
           </div>
           {/* PostgreSQL */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <SiPostgresql size={60} className="mb-2 text-primary" />
-            <h5>PostgreSQL</h5>
+            <h6>PostgreSQL</h6>
           </div>
           {/* SQL */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <FaDatabase size={60} className="mb-2 text-secondary" />
-            <h5>SQL</h5>
-          </div>
-          {/* Postman */}
-          <div className="col-6 col-md-3">
-            <SiPostman size={60} className="mb-2 text-danger" />
-            <h5>Postman</h5>
-          </div>
-          {/* Jest */}
-          <div className="col-6 col-md-3">
-            <SiJest size={60} className="mb-2 text-success" />
-            <h5>Jest</h5>
-          </div>
-          {/* Mocha */}
-          <div className="col-6 col-md-3">
-            <SiMocha size={60} className="mb-2 text-warning" />
-            <h5>Mocha</h5>
+            <h6>SQL</h6>
           </div>
           {/* HTML5 */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <FaHtml5 size={60} className="mb-2 text-danger" />
-            <h5>HTML5</h5>
+            <h6>HTML5</h6>
           </div>
           {/* CSS3 */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <FaCss3Alt size={60} className="mb-2 text-primary" />
-            <h5>CSS3</h5>
+            <h6>CSS3</h6>
           </div>
           {/* Bootstrap */}
-          <div className="col-6 col-md-3">
+          <div className="col-4 col-md-2">
             <FaBootstrap size={60} className="mb-2 text-info" />
-            <h5>Bootstrap</h5>
+            <h6>Bootstrap</h6>
+          </div>
+          {/* Postman */}
+          <div className="col-4 col-md-2">
+            <SiPostman size={60} className="mb-2 text-danger" />
+            <h6>Postman</h6>
+          </div>
+          {/* Jest */}
+          <div className="col-4 col-md-2">
+            <SiJest size={60} className="mb-2 text-success" />
+            <h6>Jest</h6>
+          </div>
+          {/* Mocha */}
+          <div className="col-4 col-md-2">
+            <SiMocha size={60} className="mb-2 text-warning" />
+            <h6>Mocha</h6>
           </div>
         </div>
       </div>
@@ -100,6 +107,7 @@ function NoProjectScreen() {
           .
         </p>
       </div>
+       <Footer/>
     </div>
   );
 }

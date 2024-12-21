@@ -3,6 +3,7 @@ import { useOutlet } from "react-router-dom";
 import Img from "../img/IMG_5240.jpg";
 import NoProjectScreen from "./NoProjectScreen";
 import "../style.css";
+import Footer from "./Footer";
 
 function PortfolioLayout() {
   const outlet = useOutlet();
@@ -11,8 +12,10 @@ function PortfolioLayout() {
     <div className="bg-dark min-h-screen">
       <div className="row p-5">
         {/* Developer Description */}
+        <div className="col-lg-1"></div>
+    
         <div className="col-lg-6">
-          <h1 className="text-white">Full-Stack Developer</h1>
+          <h1 className="text-white display-5">Full-Stack Developer</h1>
 
           <br />
           <p className="justify-text text-white">
@@ -39,16 +42,18 @@ function PortfolioLayout() {
           <a
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className="btn btn-outline-light"
+            className="btn btn-light"
           >
-            Resume
+            My Resume
           </a>
         </div>
 
-        <div className="col-lg-2"></div>
+        <div className="col-lg-1"></div>
       </div>
 
       {outlet ? outlet : <NoProjectScreen />}
+  
+
     </div>
   );
 }

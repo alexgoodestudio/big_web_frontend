@@ -11,6 +11,9 @@
 .justify-text {
   text-align: justify;
 }
+.smallfont{
+  font-size: 8.4pt;
+}
 
 
 @media screen and (max-width: 768px) {

@@ -21,8 +21,8 @@ const Dropdown = ({ isOpen, setIsOpen }) => {
 
             <div className={`dropdown-menu${isOpen ? ' show' : ''}`} aria-labelledby="dropdownMenuButton">
                 <Link className="dropdown-item" to="/neatfreak/onetime" onClick={() => setIsOpen(false)}>One-Time Clean</Link>
-                <Link className="dropdown-item" to="/neatfreak/moving" onClick={() => setIsOpen(false)}>Move In/Out Clean</Link>
-                <Link className="dropdown-item" to="/neatfreak/recurring" onClick={() => setIsOpen(false)}>Recurring Service</Link>
+                <Link className="dropdown-item" to="/neatfreak/moving" onClick={() => setIsOpen(false)}>Move-In/ Move-Out Cleaning</Link>
+                <Link className="dropdown-item" to="/neatfreak/recurring" onClick={() => setIsOpen(false)}>Recurring Services</Link>
             </div>
         </div>
     );
