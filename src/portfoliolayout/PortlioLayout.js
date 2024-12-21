@@ -10,7 +10,7 @@ function PortfolioLayout() {
 
   return (
     <div className="bg-dark min-h-screen">
-      <div className="row pt-5 px-3">
+      <div className="row py-5 px-3">
         {/* Developer Description */}
         <div className="col-lg-1"></div>
     
