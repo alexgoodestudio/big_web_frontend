@@ -13,11 +13,11 @@ function PortfolioLayout() {
       <div className="row py-5 px-3">      
         <div className=" col-lg-1"></div>    
         <div className=" col-lg-6">
-          <h1 className="text-white ">Full-Stack Developer</h1>
+          <h1 className="grey  bold"><span className="text-light">Full-Stack</span> Developer</h1>
           <br />
           <p className="justify-text mobileText text-white">
             Hi, my name is <span className="bold">Alex Goode</span>. I am a
-            Junior Freelance <span className="underline">Software Engineer</span> in
+            Junior <span className="underline">Software Engineer</span> in
             Blythewood, South Carolina. Experienced in Full-Stack Development
             and DevOps with strong background in Customer Service/ Graphic
             Design roles.
@@ -42,7 +42,7 @@ function PortfolioLayout() {
           <a
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className="btn btn-light"
+            className="btn btn-success"
           >
             My Resume
           </a>
