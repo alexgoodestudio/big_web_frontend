@@ -38,7 +38,7 @@ function PortfolioLayout() {
 
         {/* Image and Button Section */}
         <div className="  col-lg-4 d-flex flex-column align-items-center justify-content-center">
-          <img src={Img} className="img-fluid fullWidth mobileWidth rounded2 mt-4 mb-4" alt="img" />
+          <img src={Img} className="img-fluid fullWidth ipadWidth mobileWidth rounded2 mt-4 mb-4" alt="img" />
           <a
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"

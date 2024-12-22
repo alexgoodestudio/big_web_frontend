@@ -29,6 +29,11 @@
 .rounded2{
   border-radius: 50px;
 }
+@media (max-width: 1024px) {
+.ipadWidth{
+  width: 30%;
+}
+}
 
 @media screen and (max-width: 768px) {
   .agsLogo{

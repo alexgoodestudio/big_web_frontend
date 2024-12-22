@@ -21,7 +21,7 @@ import Footer from "./Footer";
 function NoProjectScreen() {
   return (
     <div className="bg-dark text-white p-5 ">
-        <h4 className="  mb-4  text-center underline">Current Tech Stack</h4>
+        <h4 className="  mb-2  text-center bold">Current Tech Stack</h4>
         <p className=" mb-5 mobileText text-center ">
           I use these technologies thoughout most of my projects.
         </p>
