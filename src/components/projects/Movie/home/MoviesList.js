@@ -7,8 +7,7 @@ function MoviesList() {
   const [isLoading, setIsLoading] = useState(true); 
   const [error, setError] = useState(null); 
 
-  const isProduction = process.env.NODE_ENV === "production";
-const basePath = isProduction ? "/movies/" : "movies/";
+
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -50,7 +49,7 @@ const basePath = isProduction ? "/movies/" : "movies/";
         {movies.map((movie) => (
           <article key={movie.movie_id} className="col-sm-12 col-md-6 col-lg-3 my-2">
             
-            <Link to={`${basePath}${movie.movie_id}`} className="movie-link">
+            <Link to={`movie/${movie.movie_id}`} className="movie-link">
             <img
                   alt={`${movie.title} Poster`} 
                   className="rounded img-fluid"
