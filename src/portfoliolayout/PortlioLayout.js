@@ -9,15 +9,15 @@ function PortfolioLayout() {
   const outlet = useOutlet();
 
   return (
-    <div className="bg-dark min-h-screen p-1 ">
+    <div className=" bg-grey min-h-screen p-1 text-white">
       <div className="row py-5 px-3">      
         <div className=" col-lg-1"></div>    
         <div className=" col-lg-6">
-          <h1 className="grey  bold"><span className="text-light">Full-Stack</span> Developer</h1>
+          <h1 className=" bordertopbottom text-white"><span className="style grey">Full-Stack</span> Software Engineer</h1>
           <br />
-          <p className="justify-text mobileText text-white">
-            Hi, my name is <span className="bold">Alex Goode</span>. I am a
-            Junior <span className="underline">Software Engineer</span> in
+          <p className="justify-text mobileText ">
+            Hi, my name is <span className=" bold">Alex Goode</span>. I am a
+            Junior <span className="  bold">Software Engineer</span> in
             Blythewood, South Carolina. Experienced in Full-Stack Development
             and DevOps with strong background in Customer Service/ Graphic
             Design roles.
@@ -48,7 +48,7 @@ function PortfolioLayout() {
           >
             My Resume
           </a>
-          <img src={Img2} className="w-50"/>
+          {/* <img src={Img2} className="w-50"/> */}
 
         </div>
 

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 function MoviesList() {
   const [movies, setMovies] = useState([]); // Initialize as an empty array
@@ -42,17 +44,22 @@ function MoviesList() {
 
   // Render movies with restored formatting
   return (
-    <main className="container mt-3">
+    <main className="container mt-3 text-dark">
       <h2 className="font-poppins">Now Showing</h2>
       <hr />
       <section className="row">
         {movies.map((movie) => (
           <article key={movie.movie_id} className="col-sm-12 col-md-6 col-lg-3 my-2">
-            <img
-              alt={`${movie.title} Poster`} // Accessible alt text
-              className="rounded img-fluid" // Bootstrap classes for responsiveness
-              src={movie.image_url} // Movie poster image
-            />
+            
+            <Link to={`movies/${movie.movie_id}`} className="movie-link">
+                <img
+                  alt={`${movie.title} Poster`} 
+                  className="rounded img-fluid"
+                  src={movie.image_url} 
+                  loading="lazy"
+                />
+              </Link>
+
             <h3 className="font-poppins-heading text-center mt-2">{movie.title}</h3> {/* Movie title */}
           </article>
         ))}

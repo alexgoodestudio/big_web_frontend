@@ -3,12 +3,12 @@ import "./style.css";
 
 function Education() {
   return (
-    <div className="row text-white  p-5">
+    <div className="row   p-5">
       <div className="col-lg-12 ">
         <h6 className="display-6 mb-4 ">Education</h6>
       </div>
 
-      <div className=" col-lg-3  bg-white text-dark border p-4 ">
+      <div className=" col-lg-3  bg-white grey border p-4 ">
         <div className="vertical-line">
           <span className="text-bold underline ">Certificate</span>
           <br />
@@ -36,8 +36,8 @@ function Education() {
         </p>
       </div>
 
-      <div className="col-lg-3 text-white border p-4 ">
-        <div className="vertical-line">
+      <div className="col-lg-3 bg-grey text-white border p-4 ">
+        <div className="vertical-line2">
           <span className="text-bold underline">Certificate</span>
           <br />
           Front End Software Development

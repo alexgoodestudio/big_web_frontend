@@ -4,7 +4,7 @@ import AverageRating from "../movie/AverageRating";
 
 function DetailedMovie({ movie }) {
   return (
-    <section className="row mt-4">
+    <section className="row mt-4 text-dark">
       <article className="col-sm-12 col-md-6 col-lg-3">
         <img
           alt={`${movie.title} Poster`}

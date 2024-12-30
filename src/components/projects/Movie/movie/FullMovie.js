@@ -35,7 +35,7 @@ function FullMovie() {
   }
 
   return (
-    <div className="container">
+    <div className="container text-dark">
       <ErrorAlert error={error} />
       <section className="row mt-4">
         <article className="col-sm-12 col-md-6 col-lg-3">

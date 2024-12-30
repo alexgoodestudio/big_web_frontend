@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Theater({ theater }) {
   return (
-    <article className="col-12 mb-4">
+    <article className="col-12 mb-4 text-dark">
       <div className="row">
         <aside className="col-12 col-md-6">
           <h2>{theater.name}</h2>

@@ -82,7 +82,7 @@ function Dashboard() {
     
         <div className="mb-1">
           <div className="d-flex p-2 pt-4">
-            <div>
+            <div className="borderleft">
               <h6 className="ml-4">Reservations for:</h6>
               <h4>
                 {dayOfWeek}, <span className="ml-1 underline">{currentDate}</span>
