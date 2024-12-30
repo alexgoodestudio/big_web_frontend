@@ -3,13 +3,13 @@ import { useOutlet } from "react-router-dom";
 import Img from "../img/IMG_5240.jpg";
 import NoProjectScreen from "./NoProjectScreen";
 import "../style.css";
+import Img2 from "../img/squiggle.png"
 
 function PortfolioLayout() {
   const outlet = useOutlet();
 
   return (
     <div className="bg-dark min-h-screen p-1 ">
-
       <div className="row py-5 px-3">      
         <div className=" col-lg-1"></div>    
         <div className=" col-lg-6">
@@ -34,6 +34,8 @@ function PortfolioLayout() {
             and design trends. Flexible and open to relocation for the
             right in-person, or hybrid roles. US Citizen.
           </p>
+
+        
         </div>
 
         {/* Image and Button Section */}
@@ -42,10 +44,12 @@ function PortfolioLayout() {
           <a
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className="btn btn-success"
+            className="bold btn btn-success px-4 py-1 "
           >
             My Resume
           </a>
+          <img src={Img2} className="w-50"/>
+
         </div>
 
         <div className=" col-lg-1"></div>

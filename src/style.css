@@ -1,48 +1,51 @@
-
 .PortfolioNav {
-    background-color: #ced6e4;
-  }
-.grey{
-  color: #8f9ba7
-  ;
+  background-color: #ced6e4;
 }
-.agsLogo{
+.grey {
+  color: #8f9ba7;
+}
+.agsLogo {
   width: 7%;
 }
 
 .justify-text {
   text-align: justify;
 }
-.smallfont{
+.smallfont {
   font-size: 8.4pt;
 }
-.fullWidth{
+.fullWidth {
   width: 55%;
 }
-.DashboardPadding{
+.DashboardPadding {
   padding: 8%;
 }
 .background {
-  object-position: center; 
+  object-position: center;
   width: 100%;
 }
-.rounded2{
+.rounded2 {
   border-radius: 50px;
 }
-@media (max-width: 1024px) {
-.ipadWidth{
-  width: 30%;
+.bold {
+  font-weight: 900;
+  font-style: oblique;
 }
+@media (max-width: 1024px) {
+  .ipadWidth {
+    width: 30%;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
-  .agsLogo{
+  .agsLogo {
     width: 15%;
   }
-  .mobileText{
+  .mobileText {
     font-size: 10pt;
   }
-  .mobileWidth{
+  .mobileWidth {
     width: 60%;
   }
   .background {
