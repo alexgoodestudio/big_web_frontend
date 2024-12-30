@@ -37,7 +37,7 @@ function SeatPage() {
     //CURRENT SITUATION: have API call to update Tables Status |nned API call to update Reservation Status
     return (
         <>
-            <form onSubmit={submitHandler}>
+            <form onSubmit={submitHandler} className="text-dark">
                 <select name="table_id" id="tables" onChange={changeHandler} value={tableID}>
                 <option value="">Select a table</option>
                     {tables.map((table) => (

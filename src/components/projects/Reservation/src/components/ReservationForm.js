@@ -12,7 +12,7 @@ function ReservationForm({ title, error, formData, handleChange,handleSubmit }) 
   return (
     <div>
       <ErrorAlert error={error} />
-      <form className="m-4 w-50" onSubmit={handleSubmit}>
+      <form className="m-4 w-50 text-dark" onSubmit={handleSubmit}>
         <h3>{title}</h3>
         <input
           className="form-control"

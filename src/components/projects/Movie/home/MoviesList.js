@@ -36,7 +36,7 @@ function MoviesList() {
 
   return (
     <main className="container mt-3 text-dark">
-      <h2 className="font-poppins">Now Showing</h2>
+      <h2 className="font-poppins ">Now Showing</h2>
       <hr />
       <section className="row">
         {movies.map((movie) => (

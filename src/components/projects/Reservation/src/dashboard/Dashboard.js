@@ -58,7 +58,7 @@ function Dashboard() {
   }
 
   return (
-    <div>
+    <div className="text-dark">
       <img src={image1} className="img-fluid" alt="banner" />
       
       <div className="mobileReservationsMargin">

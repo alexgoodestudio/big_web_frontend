@@ -52,7 +52,7 @@ function NavBar() {
             <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
               <li><Link className="dropdown-item" to="/neatfreak">Neatfreak Cleaning Services</Link></li>
               <li><Link className="dropdown-item" to="/reservation">Book-Table-Now</Link></li>
-              <li><Link className="dropdown-item" to="/movie">WeLoveMovies</Link></li>
+              {/* <li><Link className="dropdown-item" to="/movie">WeLoveMovies</Link></li> */}
             </ul>
           </li>
           <li className="nav-item">

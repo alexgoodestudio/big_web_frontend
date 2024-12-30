@@ -7,7 +7,7 @@ import Chatbot from "./Chatbot";
 
 function OneTime() {
   return (
-    <div className=" mt-lg-5 container">
+    <div className=" mt-lg-5 container text-dark">
       <div className="row">
         <div className="col-lg-5 col-12">
           <img src={Image1} className="img-fluid mt-lg-3 mobileScale br3  " alt="..." />

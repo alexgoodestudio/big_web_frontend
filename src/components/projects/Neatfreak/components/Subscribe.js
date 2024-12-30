@@ -45,7 +45,7 @@ function Subscribe() {
     }
   };
   return (
-    <div className="mx-4">
+    <div className="mx-4 text-dark">
       <div className="row my-4">
         <div className="col-lg-2"></div>
 

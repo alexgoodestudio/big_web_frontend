@@ -7,7 +7,7 @@ import Chatbot from "./Chatbot";
 
 function Moving() {
   return (
-    <div className=" mt-lg-5 container">
+    <div className=" mt-lg-5 container text-dark">
       <div className="row">
         <div className="col-lg-5 p-4 col-12">
           <img src={Image1} className=" w-100 img-fluid br2" alt="..." />

@@ -10,7 +10,7 @@ import ErrorBoundary from "./ErrorBoundary";
 function Request() {
   console.log("React.createElement:", React.createElement);
   return (
-    <div className="container mt-5 ">
+    <div className="container mt-5 text-dark">
       <div className="row mobilePadding">
         <div className="col-lg-6 border requestBox pt-lg-5 px-lg-5 pt-3 px-3">
           <h3 className="fontLight ">

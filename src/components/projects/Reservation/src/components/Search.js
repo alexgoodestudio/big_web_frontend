@@ -25,7 +25,7 @@ function Search() {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="m-5 w-50">
+      <form onSubmit={handleSubmit} className="m-5 w-50 text-dark">
         <h4>Find Reservation</h4>
         <input
           onChange={handleChange}

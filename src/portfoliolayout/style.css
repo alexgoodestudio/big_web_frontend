@@ -1,28 +1,91 @@
 
-.text-white h5 {
-    font-weight: bold;
-    margin-top: 10px;
+.backgroundcolor{
+background-color:#ffffff;;
+}
+.style{
+  font-style: italic;
+  font-weight: 100;
+}
+.light{
+  font-weight: 100;
+}
+.bordertopbottom {
+  position: relative; /* Enables pseudo-elements positioning */
+  padding: 2.5%;
+  display: flex;
+  flex-direction: column;
+}
+.bordertopbottom::before,
+.bordertopbottom::after {
+  content: "";
+  position: absolute;
+  height: 1px; /* Border thickness */
+  background-color: rgb(255, 255, 255); /* Border color */
+}
+.bordertopbottom::before {
+  top: 0; /* Position at the top */
+  right: 0; /* Start expanding from the right */
+  width: 0; /* Initial width is 0 */
+  animation: expand-from-right 1s ease forwards; /* Animate top line */
+}
+.bordertopbottom::after {
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Start expanding from the left */
+  width: 0; /* Initial width is 0 */
+  animation: expand-from-left 1s ease forwards; /* Animate bottom line */
+}
+@keyframes expand-from-right {
+  from {
+    width: 0;
+    right: 0; /* Start from the right */
   }
-  
-  .text-white a {
-    transition: color 0.3s ease-in-out;
+  to {
+    width: 100%; /* Expand to full width */
+    right: 0;
   }
-  
-  .text-white a:hover {
-    color: #f0db4f; /* Playful hover color */
+}
+@keyframes expand-from-left {
+  from {
+    width: 0;
+    left: 0; /* Start from the left */
   }
-  
-  .row .col-6:hover h5 {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+  to {
+    width: 100%; /* Expand to full width */
+    left: 0;
   }
-  .vertical-line {
-    border-left: 5px solid #7b7b7b; /* Adds a black vertical line */
-    padding-left: 15px; /* Space between the line and text */
-  }
-  .vertical-line2 {
-    border-left: 5px solid #ffffff; /* Adds a black vertical line */
-    padding-left: 15px; /* Space between the line and text */
-  }
-  
-  
+}
+.c1{
+  color: #D9594C;
+}
+.c2{
+  color: #A87CA1;
+}
+.c3{
+  color: #D9B237;
+}
+.c4{
+  color: #2A7D7F;
+}
+.PortfolioNav {
+  background-color: #ced6e4;
+  background-color: #cab1c6;;
+}
+.grey {
+  color: #8f9ba7;
+}
+.bg-grey{
+  background-color:  #212529;;
+}
+.agsLogo {
+  width: 7%;
+}
+
+
+
+
+
+
+
+
+
+

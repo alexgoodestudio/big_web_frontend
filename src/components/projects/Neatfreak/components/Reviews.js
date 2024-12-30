@@ -6,7 +6,7 @@ import Chatbot from "./Chatbot";
 
 function Reviews() {
   return (
-    <div className="mx-4">
+    <div className="mx-4 text-dark">
       <div className="row d-flex ms-2 me-2 p-lg-5">
         <div className="col-lg-3 "> </div>
         <div className="col-lg-6">

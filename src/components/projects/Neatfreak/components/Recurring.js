@@ -7,7 +7,7 @@ import Chatbot from "./Chatbot";
 
 function Recurring() {
   return (
-    <div className=" mt-lg-5 container">
+    <div className=" mt-lg-5 container text-dark">
       <div className="row">
       <div className="col-lg-5 col-12 ">
         <img src={Image1} className="img-fluid mobileScale br mt-lg-3   br3" alt="..." />
