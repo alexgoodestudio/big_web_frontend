@@ -49,14 +49,14 @@ function MoviesList() {
         {movies.map((movie) => (
           <article key={movie.movie_id} className="col-sm-12 col-md-6 col-lg-3 my-2">
             
-            <Link to={`movies/${movie.id}`} className="movie-link">
-            <img
-                  alt={`${movie.title} Poster`} 
-                  className="rounded img-fluid"
-                  src={movie.image_url} 
-                  loading="lazy"
-                />
-              </Link>
+            <Link to={`movies/${movie.movie_id}`} className="movie-link">
+              <img
+                alt={`${movie.title} Poster`} 
+                className="rounded img-fluid"
+                src={movie.image_url} 
+                loading="lazy"
+              />
+            </Link>
 
             <h3 className="font-poppins-heading text-center mt-2">{movie.title}</h3> {/* Movie title */}
           </article>
