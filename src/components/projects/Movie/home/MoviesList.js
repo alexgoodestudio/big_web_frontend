@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 
 
 function MoviesList() {
-  const [movies, setMovies] = useState([]); // Initialize as an empty array
-  const [isLoading, setIsLoading] = useState(true); // Loading state
-  const [error, setError] = useState(null); // Error state for API errors
+  const [movies, setMovies] = useState([]); 
+  const [isLoading, setIsLoading] = useState(true); 
+  const [error, setError] = useState(null); 
+
+  const isProduction = process.env.NODE_ENV === "production";
+const basePath = isProduction ? "/movies/" : "movies/";
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -14,35 +17,31 @@ function MoviesList() {
       try {
         const response = await fetch("https://we-love-movies-backend-57kd.onrender.com/movies");
         if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`); // Handle non-2xx HTTP statuses
+          throw new Error(`HTTP error! status: ${response.status}`); 
         }
         const data = await response.json();
-        console.log("API Response:", data); // Debug API response
+        console.log("API Response:", data); 
 
-        // Extract the `data` array from the response object
-        setMovies(data.data); // Set `movies` to the array of movie objects
+      
+        setMovies(data.data);
       } catch (err) {
-        console.error("Error fetching movies:", err); // Log errors
+        console.error("Error fetching movies:", err); 
         setError(err.message || "Something went wrong");
-        setMovies([]); // Fallback to empty array on error
+        setMovies([]); 
       } finally {
-        setIsLoading(false); // Stop loading
+        setIsLoading(false); 
       }
     };
 
-    fetchMovies(); // Fetch movies on component mount
+    fetchMovies(); 
   }, []);
 
-  // Loading state
   if (isLoading) return <div>Loading...</div>;
 
-  // Error state
   if (error) return <div>Error: {error}</div>;
 
-  // No movies found
   if (!movies.length) return <div>No movies found.</div>;
 
-  // Render movies with restored formatting
   return (
     <main className="container mt-3 text-dark">
       <h2 className="font-poppins">Now Showing</h2>
@@ -51,8 +50,8 @@ function MoviesList() {
         {movies.map((movie) => (
           <article key={movie.movie_id} className="col-sm-12 col-md-6 col-lg-3 my-2">
             
-            <Link to={`movies/${movie.movie_id}`} className="movie-link">
-                <img
+            <Link to={`${basePath}${movie.movie_id}`} className="movie-link">
+            <img
                   alt={`${movie.title} Poster`} 
                   className="rounded img-fluid"
                   src={movie.image_url} 
