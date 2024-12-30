@@ -6,7 +6,7 @@ function MoviesList() {
   const [movies, setMovies] = useState([]); 
   const [isLoading, setIsLoading] = useState(true); 
   const [error, setError] = useState(null); 
-
+  console.log("Movies:", movies);
 
 
   useEffect(() => {
@@ -50,7 +50,7 @@ function MoviesList() {
           <article key={movie.movie_id} className="col-sm-12 col-md-6 col-lg-3 my-2">
             
             <Link to={`/movie/movies/${movie.movie_id}`} className="movie-link">
-              <img
+            <img
                 alt={`${movie.title} Poster`} 
                 className="rounded img-fluid"
                 src={movie.image_url} 
