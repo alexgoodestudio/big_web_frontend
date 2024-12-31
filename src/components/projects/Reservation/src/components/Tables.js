@@ -2,6 +2,8 @@ import { useState } from "react";
 import { finishTableStatus } from "../utils/api";
 import { useNavigate } from "react-router-dom";
 
+
+
 function Tables({ tables = [] }) {
   const [hiddenButtons, setHiddenButtons] = useState({}); // Object to keep track of hidden buttons
   const navigate = useNavigate();
@@ -19,7 +21,7 @@ function Tables({ tables = [] }) {
   async function handleSubmit(tableId) {
     const abortController = new AbortController();
     await finishTableStatus(tableId, abortController.signal);
-    navigate(-1);
+    navigate("/reservation/dashboard");
   }
 
   const list = tables.length ? (
@@ -42,6 +44,7 @@ function Tables({ tables = [] }) {
             <td>{table.capacity}</td>
             <td>
               {table.reservation_id && !hiddenButtons[table.table_id] ? (
+              
                 <button
                   onClick={() => clickHandler(table.table_id)}
                   className="btn btn-outline-primary width"
@@ -49,6 +52,7 @@ function Tables({ tables = [] }) {
                 >
                   Finish
                 </button>
+             
               ) : (
                 ""
               )}
