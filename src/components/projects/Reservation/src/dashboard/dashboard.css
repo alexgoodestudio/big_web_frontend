@@ -26,11 +26,32 @@ h4{
 .italics1 {
   font-style: italic;
   margin-right: 12px;
+  
 }
 
-.width4{
-  width: 100px;
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0; /* Start completely invisible */
+    transform: translateX(-100px); /* Start off-screen to the left */
+  }
+  70% {
+    opacity: 1; /* Fully visible before bounce settles */
+    transform: translateX(10px); /* Slight bounce effect */
+  }
+  100% {
+    opacity: 1; /* Stay fully visible */
+    transform: translateX(0); /* End in the correct position */
+  }
 }
+
+.width4 {
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0; /* Hidden before animation starts */
+  animation: fadeInFromLeft 1.5s ease-out forwards;
+}
+
 .reduce {
   height: 100px;
 }
@@ -74,6 +95,9 @@ p {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; 
     overflow-x: scroll; 
+  }
+  .mobileSpace{
+    margin-bottom: 30px;
   }
   .mobileReservationsMargin{
     margin: 5%;

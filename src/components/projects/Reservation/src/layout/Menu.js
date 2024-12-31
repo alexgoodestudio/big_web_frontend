@@ -9,7 +9,7 @@ import "./Layout.css";
  */
 function Menu() {
   return (
-    <nav className="navbar bg-secondary p-0">
+    <nav className="navbar c4 p-3">
       <div className="container-fluid d-flex flex-row flex-lg-column align-items-stretch">
         {/* Home Link */}
         {/* <Link
@@ -18,27 +18,27 @@ function Menu() {
         >
           <span>Home</span>
         </Link> */}
-        <hr className="my-0 w-100" />
+      
         
         {/* Navigation Links */}
         <ul className="navbar-nav d-flex flex-row flex-lg-column w-100 justify-content-between">
           <li className="nav-item flex-grow-1">
-            <Link className="nav-link btn btn-outline-secondary text-light w-100" to="/reservation/dashboard">
+            <Link className="nav-link btn  text-light w-100" to="/reservation/dashboard">
               <span className="oi oi-dashboard" /> Dashboard
             </Link>
           </li>
           <li className="nav-item flex-grow-1">
-            <Link className="nav-link btn btn-outline-secondary text-light w-100" to="/reservation/search">
+            <Link className="nav-link btn  text-light w-100" to="/reservation/search">
               <span className="oi oi-magnifying-glass" /> Search
             </Link>
           </li>
           <li className="nav-item flex-grow-1">
-            <Link className="nav-link btn btn-outline-secondary text-light w-100" to="/reservation/reservations/new">
+            <Link className="nav-link btn  text-light w-100" to="/reservation/reservations/new">
               <span className="oi oi-plus" /> Booking
             </Link>
           </li>
           <li className="nav-item flex-grow-1">
-            <Link className="nav-link btn btn-outline-secondary text-light w-100" to="/reservation/tables/new">
+            <Link className="nav-link btn  text-light w-100" to="/reservation/tables/new">
               <span className="oi oi-layers" /> New Table
             </Link>
           </li>

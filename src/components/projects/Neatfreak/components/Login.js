@@ -27,7 +27,7 @@ const Login = () => {
           onSubmit={checkPw}
           className="mt-5 d-flex align-items-center justify-content-center"
         >
-          <label htmlFor="password" className="me-3">
+          <label htmlFor="password" className="me-3 p-5">
             Password:
           </label>
           <input
@@ -41,7 +41,6 @@ const Login = () => {
             Login
           </button>
           {error && <p className="text-danger ms-3">{error}</p>}
-
         </form>
       )}
     </>

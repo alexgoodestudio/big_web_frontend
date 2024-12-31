@@ -59,7 +59,9 @@ function EstimateTable() {
           <p className="card-text"><span className="text-bold">Additional Info:</span> {estimate.additional_info}</p>
 
           <div onClick={() => handleDelete(estimate.estimate_id)} className="btn btn-outline-danger"> Delete</div>
-          <div className="btn btn-outline-secondary ms-2" onClick={() => navigate(`/request/${estimate.estimate_id}/edit`)}>Edit</div>
+          <div className="btn btn-outline-secondary ms-2" onClick={() => navigate(`/neatfreak/request/${estimate.estimate_id}/edit`)}>Edit</div>
+
+          {/* http://localhost:3000/#/neatfreak/request/2/edit */}
   
         </div>
         </div>

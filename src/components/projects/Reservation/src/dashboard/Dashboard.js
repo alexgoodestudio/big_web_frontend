@@ -62,15 +62,15 @@ function Dashboard() {
       <img src={image1} className="img-fluid" alt="banner" />
       
       <div className="mobileReservationsMargin">
-        <div className="display mt-3 ">
+        <div className="display mt-3 mobileSpace">
           <h1>
-            <span className="italics1">Seamless </span> Reservations,
+            <span className="italics1 ">Seamless </span> Reservations,
           </h1>
 
-          <img src={arrow} className="ml-3 mr-2 mb-2 width4" alt="arrow" />
+          <img src={arrow} className=" mb-2 width4" alt="arrow" />
 
           <h1 className="">
-            Exceptional Service.
+            Exceptional Booking.
           </h1>
         </div>
 
