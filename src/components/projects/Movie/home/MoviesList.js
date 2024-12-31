@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 function MoviesList() {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -59,6 +60,7 @@ function MoviesList() {
           )
         ))}
       </section>
+      
     </main>
   );
 }

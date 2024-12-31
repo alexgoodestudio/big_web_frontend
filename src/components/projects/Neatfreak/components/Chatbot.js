@@ -64,7 +64,7 @@ function Chatbot() {
       </button>
       {isOpen && (
         <div className="chatbot-interface">
-          <h5 className='mb-0 pb-2 pt-3 chatbot-header-background'>NeatFreak Customer Support</h5>
+          <h5 className='text-dark mb-0 pb-2 pt-3 chatbot-header-background'>NeatFreak Customer Support</h5>
           <hr className='mt-0'/>
           <div className="messages-container">
             {pastMessages.map((message, index) => (

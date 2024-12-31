@@ -4,6 +4,7 @@ import MoviesList from "./home/MoviesList";
 import DetailedMoviesList from "./movies/DetailedMoviesList";
 import FullMovie from "./movie/FullMovie";
 import TheaterList from "./theaters/TheaterList";
+import Footer from "../../../portfoliolayout/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/movies/:movieId" element={<FullMovie />} />
         <Route path="/theaters" element={<TheaterList />} />
       </Routes>
+      <Footer/>
       </div>
     </>
   );

@@ -24,6 +24,7 @@ function TheaterList() {
       <h2 className="font-poppins">All Theaters</h2>
       <hr />
       <section className="row">{list}</section>
+   
     </main>
   );
 }

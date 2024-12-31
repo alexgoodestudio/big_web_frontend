@@ -25,6 +25,7 @@ function DetailedMoviesList() {
       <h2 className="font-poppins">All Movies</h2>
       <hr />
       <section>{list}</section>
+   
     </main>
   );
 }

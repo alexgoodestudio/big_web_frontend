@@ -34,21 +34,20 @@ function PortfolioLayout() {
             and design trends. Flexible and open to relocation for the
             right in-person, or hybrid roles. US Citizen.
           </p>
+          {/* <img src={Img2} className="w-25"/> */}
 
         
         </div>
 
-        {/* Image and Button Section */}
         <div className="  col-lg-4 d-flex flex-column align-items-center justify-content-center">
           <img src={Img} className="img-fluid fullWidth ipadWidth mobileWidth rounded2 mt-4 mb-4" alt="img" />
           <a
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className="bold btn btn-success px-4 py-1 "
+            className="bold btn btn-success text-white py-2  px-4  "
           >
             My Resume
           </a>
-          {/* <img src={Img2} className="w-50"/> */}
 
         </div>
 
