@@ -91,10 +91,8 @@ function NoProjectScreen() {
           </div>
         </div>
       </div>
-
-      {/* Footer */}
   
-      <Footer />
+      <Footer className="text-white" />
     </div>
   );
 }

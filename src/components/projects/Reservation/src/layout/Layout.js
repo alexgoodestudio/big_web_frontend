@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "./Menu";
 import Routes from "./Routes";
-import Footer from "../../../../../portfoliolayout/Footer";
+import Footer2 from "../../../../../portfoliolayout/Footer2";
 import "./Layout.css";
 
 function Layout() {
@@ -21,7 +21,7 @@ function Layout() {
         {/* Spacer (optional for layout symmetry) */}
         <div className="d-none d-lg-block col-lg-1"></div>
       </div>
-    <Footer/>
+    <Footer2/>
     </div>
   );
 }

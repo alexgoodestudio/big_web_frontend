@@ -4,7 +4,6 @@ import Image6 from "./Images/a-min.png";
 import "./Dashboard.css";
 import Chatbot from "./Chatbot";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "../../../../portfoliolayout/Footer";
 
 function Dashboard() {
   return (
@@ -36,16 +35,19 @@ function Dashboard() {
                 </div>
               </div>
             </div>
+            
           </div>
+          
           <div className="col-xl-6 ">
             <img src={Image6} className="img-fluid bathroom" alt="..." />
           </div>
+          
         </div>
+        
         <div className="chatbotButton">
         <Chatbot />
         </div>
       </div>
-      <Footer/>
     </div>
   );
 }
