@@ -20,7 +20,7 @@ function Dashboard() {
                   Let us handle
                   <br />
                   <div className="">
-                  the <span className="italics2">cleaning</span> stuff.
+                  the <span className="italics2 underline">cleaning</span> stuff.
                   </div>
                 </p>
                 <p className="underTitle">

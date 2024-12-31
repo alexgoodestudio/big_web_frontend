@@ -281,11 +281,6 @@
   justify-content: center;
 }
 
-.title{
-  font-size: 30pt;
-  font-weight: 200;
-}
-
 .underTitle{
   font-size: 15pt;
   font-weight: 200;
@@ -419,6 +414,9 @@ font-size: 34pt;
   display: block;
   font-size: 7pt;
 }
+.thin2{
+  font-weight: 300;
+}
 
 .select-style {
   background-color: white;
@@ -427,10 +425,13 @@ font-size: 34pt;
   padding: 5px 10px;
   font-size: 1rem;
 }
+
+
 .title{
-  font-weight: 200;
-  font-size: 32pt;
-  color:#1f1f1e
+  font-size: 30pt;
+  font-weight: 300;
+  color:#535353;
+  font-family:   Arial;
 }
 .italics2 {
   font-style: italic;
