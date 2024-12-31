@@ -29,7 +29,7 @@ function SeatPage() {
         event.preventDefault();
         const abortController = new AbortController();
         await seatReservationStatus(tableID, reservation_id,abortController.signal)
-            .then(() => navigate("/dashboard"))
+            .then(() => navigate("/reservation/dashboard"))
             .catch(setError);
     }
     //reservations table status => "seated"
