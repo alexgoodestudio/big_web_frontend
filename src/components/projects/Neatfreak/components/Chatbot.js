@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Dashboard.css'; 
 import { listResponse } from '../utils/api';
+import { FaComments } from "react-icons/fa";
 
 function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,9 +60,9 @@ function Chatbot() {
   
   return (
     <div className="chatbot-container">
-      <button className="chatbot-toggle text-white " onClick={toggleChat}>
-        Chat with us!
-      </button>
+<button className="chatbot-toggle text-white p-3 italic2" onClick={toggleChat}>
+  <FaComments /> Chat with us!
+</button>
       {isOpen && (
         <div className="chatbot-interface">
           <h5 className='text-dark mb-0 pb-2 pt-3 chatbot-header-background'>NeatFreak Customer Support</h5>

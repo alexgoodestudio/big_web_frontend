@@ -28,10 +28,14 @@ function NavBar() {
             <span className="italics"> | Richmond, Virginia</span>
           </h6>
         </div>
-        <div className="col-sm-4 text-center  thin2"> CALL (804) 482-0516</div>
+        <div className="col-sm-4 text-center thin2">
+          <a href="tel:+18044820516" className="phone-link">
+            CALL (804) 482-0516
+          </a>
+        </div>
       </div>
       <div className="row mt-2">
-        <div className="col-sm-6 align-items-center">
+        <div className="col-sm-6 align-items-center ">
           <img
             src={Image4}
             onClick={goToHome}
@@ -72,7 +76,7 @@ function NavBar() {
             className="link marginNav link-hover"
             onClick={closeDropdown}
           >
-            Why Hire Us
+            Why Hire Us?
           </Link>
           <a
             href="https://www.instagram.com/getneatfreakclean/"

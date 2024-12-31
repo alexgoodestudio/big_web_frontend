@@ -17,6 +17,19 @@
 .bg4{
   border: #000000;
 }
+.italic2{
+  font-style: italic;
+  font-size: 12pt;
+}
+
+.phone-link {
+  color: inherit; /* Matches text color */
+  text-decoration: none; /* Removes underline */
+}
+
+.phone-link:hover {
+  text-decoration: underline; /* Optional hover effect */
+}
 
 .chatbot-container {
   position: fixed;

@@ -13,14 +13,12 @@ function Dashboard() {
         <div className="slide-in row gx-0">
           <div className="col-xl-6 paddingDashText">
             <div className="text-container d-flex justify-content-center align-items-center">
-              <div>
-                
+              <div>                
                 <p className="title ">
-                  
-                  Let us handle
+                  "Let us handle
                   <br />
                   <div className="">
-                  the <span className="italics2 underline">cleaning</span> stuff.
+                  the <span className="italics2 underline">cleaning</span> stuff."
                   </div>
                 </p>
                 <p className="underTitle">
@@ -29,8 +27,8 @@ function Dashboard() {
                   {/* Request Your In-Home Estimate Today */}
                 </p>
                 <div className="btnMarg ">
-                  <Link to={`request`} className="btn btn-outline-secondary requestBox btnScale mt-3">
-                    <span className="">Request a Free Estimate!</span>
+                  <Link to={`request`} className="btn btn-outline-secondary  btnScale mt-3">
+                    <span className="">Request a <span className="bold">Free</span> Estimate!</span>
                   </Link>
                 </div>
               </div>
