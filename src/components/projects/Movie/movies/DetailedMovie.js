@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "../../../../portfoliolayout/Footer";
 import AverageRating from "../movie/AverageRating";
 
 function DetailedMovie({ movie }) {
@@ -28,7 +27,6 @@ function DetailedMovie({ movie }) {
           See More
         </Link>
       </aside>
-      <Footer/>
     </section>
   );
 }
