@@ -53,7 +53,7 @@ function EditForm() {
           formData,
           abortController.signal
         );
-        navigate(`/dashboard?date=${formData.reservation_date}`);
+        navigate("/reservation/dashboard");
       
     } catch (error) {
       setError(error);
