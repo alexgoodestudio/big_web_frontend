@@ -19,11 +19,11 @@ function PortfolioLayout() {
             Hi, my name is <span className=" bold t4">Alex Goode</span>. I am a
             Junior <span className="  bold">Software Engineer</span> in
             Blythewood, South Carolina. Experienced in Full-Stack Development
-            and DevOps with strong background in Customer Service/ Graphic
+            with strong background in Customer Service/ Graphic
             Design roles.
             <br/>
             <br/>
-            I currently have 3 years of software development
+            I have 3 years of software development
             experience. Throughout my education and professional experience
             which conveniently can be found in my Resume linked beneath my portfolio picture,
             I have become well-structured in approach to complex coding and
