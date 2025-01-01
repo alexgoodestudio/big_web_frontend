@@ -30,7 +30,7 @@ function NavBar() {
         </div>
         <div className="col-sm-4 text-center thin2">
           <a href="tel:+18044820516" className="phone-link">
-            CALL (804) 482-0516
+          📞 CALL (804) 482-0516
           </a>
         </div>
       </div>
@@ -44,7 +44,7 @@ function NavBar() {
           />
         </div>
 
-        <div className="d-flex col-sm-6 align-items-center">
+        <div className="d-flex col-sm-6 align-items-center thin2">
           <Link
             to="/neatfreak"
             className="link link-hover marginNav"

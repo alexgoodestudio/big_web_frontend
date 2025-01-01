@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Dashboard.css'; 
 import { listResponse } from '../utils/api';
 import { FaComments } from "react-icons/fa";
-
+import Img1 from "./Images/customersupport.svg"
 function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [inputData, setInputData] = useState('');
@@ -66,11 +66,14 @@ function Chatbot() {
       {isOpen && (
         <div className="chatbot-interface">
           <h5 className='text-dark mb-0 pb-2 pt-3 chatbot-header-background'>NeatFreak Customer Support</h5>
+          
           <hr className='mt-0'/>
           <div className="messages-container">
             {pastMessages.map((message, index) => (
+              
               <p key={index} className={message.sender === 'user' ? "user-message" : "chatbot-message"}>
-                <span className={message.sender === 'user' ? "borderUser alert alert-primary" : "borderChatbot alert alert-secondary"}>
+                <span className={message.sender === 'user' ? "borderUser alert alert-primary textuser" : "borderChatbot alert alert-secondary textbot"}>
+               
                   <span className="time">{message.time}</span>
                   {message.text}
                 </span>

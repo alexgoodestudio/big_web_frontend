@@ -26,8 +26,8 @@ function Dashboard() {
                  
                   {/* Request Your In-Home Estimate Today */}
                 </p>
-                <div className="btnMarg ">
-                  <Link to={`request`} className="btn btn-outline-secondary  btnScale mt-3">
+                <div className="btnMarg">
+                  <Link to={`request`} className="btn btn-outline-secondary p-3 btnScale mt-3">
                     <span className="">Request a <span className="bold">Free</span> Estimate!</span>
                   </Link>
                 </div>

@@ -3,7 +3,7 @@ import { useOutlet } from "react-router-dom";
 import Img from "../img/IMG_5240.jpg";
 import NoProjectScreen from "./NoProjectScreen";
 import "../style.css";
-import Img2 from "../img/squiggle.png"
+
 
 function PortfolioLayout() {
   const outlet = useOutlet();
@@ -16,7 +16,7 @@ function PortfolioLayout() {
           <h1 className=" bordertopbottom text-white"><span className="style grey">Full-Stack</span> Software Engineer</h1>
           <br />
           <p className="justify-text mobileText ">
-            Hi, my name is <span className=" bold">Alex Goode</span>. I am a
+            Hi, my name is <span className=" bold t4">Alex Goode</span>. I am a
             Junior <span className="  bold">Software Engineer</span> in
             Blythewood, South Carolina. Experienced in Full-Stack Development
             and DevOps with strong background in Customer Service/ Graphic

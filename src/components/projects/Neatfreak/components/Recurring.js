@@ -32,7 +32,7 @@ function Recurring() {
             cleaning products.
           </p>
           <div className="btnMarg ">
-            <Link to="/neatfreak/request" className="btn btn-outline-secondary requestBox"> Request a Free Estimate!</Link>
+            <Link to="/neatfreak/request" className="btn btn-outline-secondary  p-3"> Request a <span className="bold3">Free</span> Estimate!</Link>
           </div>
         </div>
       </div>
