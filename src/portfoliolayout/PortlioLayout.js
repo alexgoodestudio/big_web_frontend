@@ -1,62 +1,80 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useOutlet } from "react-router-dom";
+import { gsap } from "gsap";
 import Img from "../img/IMG_5240.jpg";
 import NoProjectScreen from "./NoProjectScreen";
 import "../style.css";
 
-
 function PortfolioLayout() {
   const outlet = useOutlet();
 
-  return (
-    <div className=" bg-grey min-h-screen p-1 text-white">
-      <div className="row py-5 px-3">      
-        <div className=" col-lg-1"></div>    
-        <div className=" col-lg-6">
-          <h1 className=" bordertopbottom text-white"><span className="style grey">Full-Stack</span> Software Engineer</h1>
-          <br />
-          <p className="justify-text mobileText ">
-            Hi, my name is <span className=" bold t4">Alex Goode</span>. I am a
-            Junior <span className="  bold">Software Engineer</span> in
-            Blythewood, South Carolina. Experienced in Full-Stack Development
-            with strong background in Customer Service/ Graphic
-            Design roles.
-            <br/>
-            <br/>
-            I have 3 years of software development
-            experience. Throughout my education and professional experience
-            which conveniently can be found in my Resume linked beneath my portfolio picture,
-            I have become well-structured in approach to complex coding and
-            workplace challenges. Over the past few years, I have completed
-            Chegg Skills (Thinkful) Full-Stack Software Engineering Immersion
-            Program, and Promineo Tech's Front-End Software Development
-            Certification Program. I am passionate about keeping up with latest tech
-            and design trends. Flexible and open to relocation for the
-            right in-person, or hybrid roles. US Citizen.
-          </p>
-          {/* <img src={Img2} className="w-25"/> */}
+  const headerRef = useRef(null);
+  const paragraphRef = useRef(null);
+  const imageRef = useRef(null);
+  const buttonRef = useRef(null);
 
-        
+  useEffect(() => {
+    const timeline = gsap.timeline({ defaults: { duration: 1, ease: "power3.out" } });
+
+    gsap.set(headerRef.current, { opacity: 0, y: -50 });
+    gsap.set(paragraphRef.current, { opacity: 0, y: 50 });
+    gsap.set(imageRef.current, { opacity: 0, scale: 0.8 });
+    gsap.set(buttonRef.current, { opacity: 0, y: 20 });
+
+    timeline.to(headerRef.current, { opacity: 1, y: 0 });
+    timeline.to(paragraphRef.current, { opacity: 1, y: 0 }, "<");
+    timeline.to(imageRef.current, { opacity: 1, scale: 1 }, "-=0.5");
+    timeline.to(buttonRef.current, { opacity: 1, y: 0 }, "-=0.5");
+
+  }, []);
+
+  return (
+    <div className="bg-grey min-h-screen p-1 text-white">
+      <div className="row py-5 px-3">
+        <div className="col-lg-1"></div>
+        <div className="col-lg-6">
+          <h1 ref={headerRef} className="bordertopbottom text-white">
+            <span className="style grey">Full-Stack</span> Software Engineer
+          </h1>
+          <br />
+          <p ref={paragraphRef} className="justify-text mobileText">
+            Hi, my name is <span className="t2 underline">Alex Goode</span>. I am a
+            <span className="bold"> Full-Stack Developer</span> with a passion for front-end development using React.js. 
+            I am flexible and open to relocation for the right in-person, or hybrid
+            roles. US Citizen located in Blythewood, South Carolina.
+            <br />
+            <br />
+            Throughout my education and professional experience I have become
+            well-structured in approach to navigating complex coding and 
+            workplace challenges. Over the past few years, I have completed Chegg
+            Skills (Thinkful) Full-Stack Software Engineering Immersion Program, and
+            Promineo Tech's Front-End Software Development Certification Program. 
+            My go-to <span className="bold">tech stack</span> consists of <span className="underline">React</span>, <span className="underline">Node</span>, <span className="underline">Express</span> and <span className="underline">PostgreSQL</span>.
+
+          </p>
         </div>
 
-        <div className="  col-lg-4 d-flex flex-column align-items-center justify-content-center">
-          <img src={Img} className="img-fluid fullWidth ipadWidth mobileWidth rounded2 mt-4 mb-4" alt="img" />
+        <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center">
+          <img
+            ref={imageRef}
+            src={Img}
+            className="img-fluid fullWidth ipadWidth mobileWidth rounded2 mt-4 mb-4"
+            alt="img"
+          />
           <a
+            ref={buttonRef}
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className="bold btn btn-success text-white py-2  px-4  "
+            className="bold btn btn-success text-white py-2 px-4"
           >
             My Resume
           </a>
-
         </div>
 
-        <div className=" col-lg-1"></div>
+        <div className="col-lg-1"></div>
       </div>
-   
- 
+
       {outlet ? outlet : <NoProjectScreen />}
- 
     </div>
   );
 }
