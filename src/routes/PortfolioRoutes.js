@@ -13,7 +13,7 @@ function PortfolioRoutes() {
       <Route path="/" element={<PortfolioLayout />}>
         <Route path="neatfreak/*" element={<NeatfreakLayout />} />
         <Route path="reservation/*" element={<ReservationLayout />} />
-        <Route path="movie/*" element={<MovieLayout />} />
+        {/* <Route path="movie/*" element={<MovieLayout />} /> */}
         <Route path="education/*" element={<Education />} />
         {/* Add Lemich Clinic Route */}
         <Route
