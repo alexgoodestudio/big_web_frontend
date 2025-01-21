@@ -52,7 +52,7 @@ function NavBar() {
               <li><Link className="dropdown-item" to="/neatfreak">Neatfreak Cleaning Services</Link></li>
               <li><Link className="dropdown-item" to="/reservation">Book-Table-Now</Link></li>
               <li><Link className="dropdown-item" to="/lemich-clinic">The Lemich Clinic</Link></li>
-              <li><Link className="dropdown-item" to="/movie">We Love Movies</Link></li>
+              {/* <li><Link className="dropdown-item" to="/movie">We Love Movies</Link></li> */}
             </ul>
           </li>
           <li className="nav-item">
