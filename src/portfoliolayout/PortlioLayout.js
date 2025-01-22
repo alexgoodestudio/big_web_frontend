@@ -42,7 +42,7 @@ function PortfolioLayout() {
             <span className="bold"> Full-Stack Software Developer</span> with 2.5 years of software engineering experience.
             What I enjoy most is working on front-end web development in React.js with tools like Bootstrap, Tailwind and GSAP. 
             Having spent 4 years studying and embracing graphic design before I shifted into software development, 
-            what I enjoy most is creating user-focused interfaces, that are both functionally and physically captivating in design. 
+            what I've learned that I enjoy most is creating user-focused interfaces, that are both functionally and physically captivating in design. 
             I am flexible and open to relocation for the right in-person, or hybrid
             roles. US Citizen located in Blythewood, South Carolina.
             <br />
