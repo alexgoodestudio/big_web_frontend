@@ -15,10 +15,10 @@ function Dashboard() {
             <div className="text-container d-flex justify-content-center align-items-center">
               <div>                
                 <p className="title ">
-                  "Let us handle
+                  Let us handle
                   <br />
                   <div className="">
-                  the <span className="italics2 underline">cleaning</span> stuff."
+                  the <span className="italics2 underline">cleaning</span> stuff.
                   </div>
                 </p>
                 <p className="underTitle">

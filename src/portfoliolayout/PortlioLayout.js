@@ -39,16 +39,19 @@ function PortfolioLayout() {
           <br />
           <p ref={paragraphRef} className="justify-text mobileText">
             Hi, my name is <span className="t2 underline">Alex Goode</span>. I am a
-            <span className="bold"> Full-Stack Developer</span> with a passion for front-end development using React.js. 
+            <span className="bold"> Full-Stack Software Developer</span> with 2.5 years of software engineering experience.
+            What I enjoy most is working on front-end web development in React.js with tools like Bootstrap, Tailwind and GSAP. 
+            Having spent 4 years studying and embracing graphic design before I shifted into software development, 
+            what I enjoy most is creating user-focused interfaces, that are both functionally and physically captivating in design. 
             I am flexible and open to relocation for the right in-person, or hybrid
             roles. US Citizen located in Blythewood, South Carolina.
             <br />
             <br />
             Throughout my education and professional experience I have become
             well-structured in approach to navigating complex coding and 
-            workplace challenges. Over the past few years, I have completed Chegg
-            Skills (Thinkful) Full-Stack Software Engineering Immersion Program, and
-            Promineo Tech's Front-End Software Development Certification Program. 
+            workplace challenges, making it my goal to constantly improve how I tackle new problems. Over the past few years, I have completed Chegg
+            Skills (Thinkful) Full-Stack Software Engineering Immersion Program(2023), and
+            Promineo Tech's Front-End Software Development Certification Program(2022). 
             My go-to <span className="bold">tech stack</span> consists of <span className="underline">React</span>, <span className="underline">Node</span>, <span className="underline">Express</span> and <span className="underline">PostgreSQL</span>.
 
           </p>

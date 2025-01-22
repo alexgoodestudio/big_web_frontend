@@ -46,12 +46,12 @@ function NavBar() {
               onClick={toggleDropdown}
               style={{ background: 'none', border: 'none' }}
             >
-              Full-Stack Projects
+              Projects
             </button>
             <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
+              <li><Link className="dropdown-item" to="/lemich-clinic">The Lemich Clinic</Link></li>
               <li><Link className="dropdown-item" to="/neatfreak">Neatfreak Cleaning Services</Link></li>
               <li><Link className="dropdown-item" to="/reservation">Book-Table-Now</Link></li>
-              <li><Link className="dropdown-item" to="/lemich-clinic">The Lemich Clinic</Link></li>
               {/* <li><Link className="dropdown-item" to="/movie">We Love Movies</Link></li> */}
             </ul>
           </li>
