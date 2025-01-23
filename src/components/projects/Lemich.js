@@ -6,10 +6,12 @@ const WebsiteViewer = ({ url }) => {
       <iframe
         src={url}
         title="Website Viewer"
+        allow="autoplay; encrypted-media; fullscreen"
         style={{
           width: '100%',
           height: '100%',
           border: 'none',
+    
         }}
       />
     </div>
