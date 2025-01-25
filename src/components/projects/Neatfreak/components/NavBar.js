@@ -76,7 +76,7 @@ function NavBar() {
             className="link marginNav link-hover"
             onClick={closeDropdown}
           >
-            Why Hire Us?
+            Mission
           </Link>
           <a
             href="https://www.instagram.com/getneatfreakclean/"
