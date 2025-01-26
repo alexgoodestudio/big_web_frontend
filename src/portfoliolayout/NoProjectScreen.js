@@ -25,13 +25,14 @@ import Footer from "./Footer";
 
 function NoProjectScreen() {
   return (
-    <div className="bg-dark text-white p-3">
-      <h4 className="mb-2 text-center bold">Current Tech Stack</h4>
-      <p className="mb-5 mobileText text-center">
+    <div className="bg-dark text-white p-3 text-start">
+      <div className="container">
+      <h4 className="mb-2  bold">Tech Stack</h4>
+      <p className="mb-5 mobileText ">
         I use these technologies throughout my projects.
       </p>
-      <div className="container">
         <div className="row text-center gy-4">
+          
           {/* Node.js */}
           <div className="col-3 col-md-2">
             <FaNodeJs size={60} className="mb-2 text-success" />

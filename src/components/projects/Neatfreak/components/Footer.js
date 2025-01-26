@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./Images/NeatFreaklogo-A2.png";
+// import Logo from "./Images/NeatFreaklogo-A2.png";
 import "./Dashboard.css";
 
 function Footer() {

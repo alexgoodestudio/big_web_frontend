@@ -1,59 +1,33 @@
+@font-face {
+  font-family: 'Fandango'; 
+  src: url('../fonts/Fandango.otf') format('opentype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+/* Look UP */
+.fandango {
+  font-size: 400%;
+  font-family: 'Fandango', sans-serif; 
+}
 
 .backgroundcolor{
 background-color:#ffffff;;
 }
-.style{
-  font-style: italic;
+
+.underline2{
+  text-decoration: underline dotted 1px ;
+  text-underline-offset: 3px; 
+}
+
+
+.helvetica{
+  font-family: Helvetica;
   font-weight: 100;
 }
 .light{
   font-weight: 100;
 }
-.bordertopbottom {
-  position: relative; /* Enables pseudo-elements positioning */
-  padding: 2.5%;
-  display: flex;
-  flex-direction: column;
-}
-.bordertopbottom::before,
-.bordertopbottom::after {
-  content: "";
-  position: absolute;
-  height: 1px; /* Border thickness */
-  background-color: rgb(255, 255, 255); /* Border color */
-}
-.bordertopbottom::before {
-  top: 0; /* Position at the top */
-  right: 0; /* Start expanding from the right */
-  width: 0; /* Initial width is 0 */
-  animation: expand-from-right 1s ease forwards; /* Animate top line */
-}
-.bordertopbottom::after {
-  bottom: 0; /* Position at the bottom */
-  left: 0; /* Start expanding from the left */
-  width: 0; /* Initial width is 0 */
-  animation: expand-from-left 1s ease forwards; /* Animate bottom line */
-}
-@keyframes expand-from-right {
-  from {
-    width: 0;
-    right: 0; /* Start from the right */
-  }
-  to {
-    width: 100%; /* Expand to full width */
-    right: 0;
-  }
-}
-@keyframes expand-from-left {
-  from {
-    width: 0;
-    left: 0; /* Start from the left */
-  }
-  to {
-    width: 100%; /* Expand to full width */
-    left: 0;
-  }
-}
+
 .c1{
   color: #D9594C;
 }
@@ -66,12 +40,18 @@ background-color:#ffffff;;
 .c4{
   color: #2A7D7F;
 }
+
+.text-dark-yellow{
+  color: #A87CA1;
+}
+
+
 .PortfolioNav {
   background-color: #ced6e4;
   background-color: #cab1c6;;
 }
 .grey {
-  color: #8f9ba7;
+  color: #a0aab5;
 }
 .bg-grey{
   background-color:  #212529;;

@@ -33,13 +33,15 @@ function PortfolioLayout() {
       <div className="row py-5 px-3">
         <div className="col-lg-1"></div>
         <div className="col-lg-6">
-          <h1 ref={headerRef} className="bordertopbottom text-white">
-            <span className="style grey">Full-Stack</span> Software Engineer
+          <h1 ref={headerRef} className="">
+            Software Engineer <span className="grey"> | Web Designer</span> 
           </h1>
+
+
           <br />
-          <p ref={paragraphRef} className="justify-text mobileText">
-            Hi, my name is <span className="t2 underline">Alex Goode</span>. I am a
-            <span className="bold"> Full-Stack Software Developer</span> with 2.5 years of software engineering experience.
+          <p ref={paragraphRef} className="justify-text  mobileText">
+            Hi, my name is <span className="t3 bold">Alex Goode</span>. I am a
+            <span className="bold"> Full-Stack Software Developer/ Web Designer</span> with 2.5 years of software engineering experience.
             I am most inclined to work on projects with a strong focus on front-end web development in React.js. 
             Having spent 4 years immersing myself in graphic design before I shifted into software development, 
             I feel my strength lies in creating products that are centered around engaging micro-interactions and user-focused interfaces.
@@ -48,7 +50,7 @@ function PortfolioLayout() {
             Over the past few years, I have completed Chegg
             Skills (Thinkful) Full-Stack Software Engineering Immersion Program(2023), and
             Promineo Tech's Front-End Software Development Certification Program(2022). 
-            My go-to <span className="bold">tech stack</span> consists of <span className="underline">React</span>, <span className="underline">Node</span>, <span className="underline">Express</span> and <span className="underline">PostgreSQL</span>.
+            My go-to <span className="bold">tech stack</span> consists of <span className="underline2">React</span>, <span className="underline2">Node</span>, <span className="underline2">Express</span> and <span className="underline2">PostgreSQL</span>.
             I am flexible and open to relocating for potential opportunities. US Citizen located in Columbia, South Carolina.
           </p>
         </div>
@@ -64,9 +66,9 @@ function PortfolioLayout() {
             ref={buttonRef}
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className="bold btn btn-success text-white py-2 px-4"
+            className="bold btn btn-outline-warning text-dark-yellow py-2 px-4"
           >
-            My Resume
+           My Resume
           </a>
         </div>
 
