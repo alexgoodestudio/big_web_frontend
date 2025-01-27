@@ -10,6 +10,20 @@
   font-family: 'Fandango', sans-serif; 
 }
 
+.crayon {
+  width: 62%;
+}
+
+
+.bg-purple {
+  background-color: #cab1c6;
+}
+
+.bg-green{
+  background-color:  #06402b;
+
+}
+
 .worm span {
   display: inline-block;
   transform: rotate(0deg) translateY(0);
@@ -111,9 +125,7 @@
   transform: rotate(-3deg) translateY(-2px);
 }
 
-.backgroundcolor{
-background-color:#ffffff;;
-}
+
 .helvetica{
   font-family: Helvetica;
 }
@@ -128,23 +140,20 @@ background-color:#ffffff;;
 .btn-yellow {
   border: 1px solid #b78aaf; 
   border-radius: 10px;
-  color: #dfc8db; 
+  color: #ffffff; 
   transition: color 0.3s ease, border-color 0.3s ease; 
   text-decoration: none;
 }
 
 .btn-yellow:hover {
   border: none;
-  border: 1px solid #b78aaf; 
+  border: 1px solid #ffffff; 
   border-radius: 10px;
   color: #dfc8db; 
   text-decoration: none;
 
 }
-.PortfolioNav {
-  background-color: #ced6e4;
-  background-color: #cab1c6;
-}
+
 .grey {
   color: #a0aab5;
 }
@@ -222,13 +231,7 @@ background-color:#ffffff;;
   color: #D9B237;
 }
 
-.PortfolioNav {
-  background-color: #cab1c6;;
-}
 
-.bg-grey{
-  background-color:  #212529;;
-}
 .agsLogo {
   width: 7%;
 }
@@ -255,6 +258,7 @@ background-color:#ffffff;;
 .bold {
   font-weight: 900;
 }
+
 @media (max-width: 1024px) {
   .ipadWidth {
     width: 30%;
@@ -265,6 +269,11 @@ background-color:#ffffff;;
 @media screen and (max-width: 768px) {
   .agsLogo {
     width: 15%;
+  }
+
+  .crayon{
+    width: 100%;
+    padding: 0%;
   }
   .mobileText {
     font-size: 10pt;

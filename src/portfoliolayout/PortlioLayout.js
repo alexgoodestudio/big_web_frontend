@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import Img from "../img/IMG_5240.jpg";
 import NoProjectScreen from "./NoProjectScreen";
 import "../style.css";
+import img1 from "../img/crayon2.png"
 
 function PortfolioLayout() {
   const outlet = useOutlet();
@@ -30,9 +31,11 @@ function PortfolioLayout() {
   }, []);
 
   return (
-    <div className="bg-grey min-h-screen p-1 text-white">
+    <div className="bg-green min-h-screen p-1 text-white">
       <div className="row py-5 px-3">
-        <div className="col-lg-1"></div>
+        <div className="col-lg-1">
+      
+        </div>
         <div className="col-lg-6">
           <h1 ref={headerRef} className="worm">
             {Array.from("Software Engineer").map((char, index) => (
@@ -73,6 +76,7 @@ function PortfolioLayout() {
             open to relocating for potential opportunities. US Citizen located
             in Columbia, South Carolina.
           </p>
+          <img src={img1} className="img-fluid crayon" alt="crayon"/>
         </div>
 
         <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center">
@@ -86,7 +90,7 @@ function PortfolioLayout() {
             ref={buttonRef}
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className=" btn-yellow py-2 px-4"
+            className=" btn-yellow py-2 px-4 my-3"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -94,7 +98,7 @@ function PortfolioLayout() {
           </a>
         </div>
 
-        <div className="col-lg-1"></div>
+        <div className="col-lg-1"> </div>
       </div>
 
       {outlet ? outlet : <NoProjectScreen />}

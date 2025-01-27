@@ -13,7 +13,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="navbar PortfolioNav navbar-expand-lg navbar-light px-4">
+    <nav className="navbar bg-purple navbar-expand-lg navbar-light px-4">
       <Link className="navbar-brand" to="/">
         <img src={Logo} className='agsLogo' alt="Logo" />
       </Link>

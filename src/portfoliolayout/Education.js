@@ -36,7 +36,7 @@ function Education() {
         </p>
       </div>
 
-      <div className="col-lg-3 bg-grey text-white border p-4 ">
+      <div className="col-lg-3 bg-green text-white border p-4 ">
         <div className="vertical-line2">
           <span className="text-bold underline">Certificate</span>
           <br />
