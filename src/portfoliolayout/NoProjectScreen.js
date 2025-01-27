@@ -20,7 +20,7 @@ import {
   SiGreensock,
   SiRender,
 } from "react-icons/si";
-import "./style.css";
+import "../style.css";
 import Footer from "./Footer";
 
 function NoProjectScreen() {

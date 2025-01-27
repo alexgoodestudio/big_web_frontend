@@ -86,7 +86,7 @@ function PortfolioLayout() {
             ref={buttonRef}
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className="btn btn-outline-warning text-purple-bold py-2 px-4"
+            className=" btn-yellow py-2 px-4"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >

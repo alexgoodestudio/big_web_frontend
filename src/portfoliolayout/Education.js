@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../style.css";
 
 function Education() {
   return (
@@ -8,7 +8,7 @@ function Education() {
         <h6 className="display-6 mb-4 ">Education</h6>
       </div>
 
-      <div className=" col-lg-3  bg-white grey border p-4 ">
+      <div className=" col-lg-3  bg-white text-dark border p-4 ">
         <div className="vertical-line">
           <span className="text-bold underline ">Certificate</span>
           <br />

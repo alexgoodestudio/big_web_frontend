@@ -120,6 +120,34 @@ background-color:#ffffff;;
 .light{
   font-weight: 100;
 }
+.underline2 {
+  text-decoration: underline dotted 1px;
+  text-underline-offset: 3px;
+}
+
+.btn-yellow {
+  border: 1px solid #b78aaf; 
+  border-radius: 10px;
+  color: #dfc8db; 
+  transition: color 0.3s ease, border-color 0.3s ease; 
+  text-decoration: none;
+}
+
+.btn-yellow:hover {
+  border: none;
+  border: 1px solid #b78aaf; 
+  border-radius: 10px;
+  color: #dfc8db; 
+  text-decoration: none;
+
+}
+.PortfolioNav {
+  background-color: #ced6e4;
+  background-color: #cab1c6;
+}
+.grey {
+  color: #a0aab5;
+}
 
 /* .bordertopbottom {
   position: relative; 
