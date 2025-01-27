@@ -33,7 +33,7 @@ function NavBar() {
       <div className="collapse navbar-collapse " id="navbarSupportedContent">
         <ul className="navbar-nav mx-auto text-center">
         <li className="nav-item">
-            <Link className="nav-link" to="/">Dashboard</Link>
+            <Link className="nav-link" to="/">Home</Link>
           </li>
   
           <li className="nav-item dropdown">

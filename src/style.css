@@ -10,6 +10,107 @@
   font-family: 'Fandango', sans-serif; 
 }
 
+.worm span {
+  display: inline-block;
+  transform: rotate(0deg) translateY(0);
+  transition: transform 0.2s ease-out;
+}
+
+/* Wave effect for hover */
+.worm:hover span:nth-child(1) {
+  transform: rotate(-5deg) translateY(-2px);
+}
+.worm:hover span:nth-child(2) {
+  transform: rotate(3deg) translateY(4px);
+}
+.worm:hover span:nth-child(3) {
+  transform: rotate(-4deg) translateY(-3px);
+}
+.worm:hover span:nth-child(4) {
+  transform: rotate(6deg) translateY(2px);
+}
+.worm:hover span:nth-child(5) {
+  transform: rotate(-3deg) translateY(-4px);
+}
+.worm:hover span:nth-child(6) {
+  transform: rotate(5deg) translateY(3px);
+}
+.worm:hover span:nth-child(7) {
+  transform: rotate(-2deg) translateY(-2px);
+}
+.worm:hover span:nth-child(8) {
+  transform: rotate(4deg) translateY(5px);
+}
+.worm:hover span:nth-child(9) {
+  transform: rotate(-3deg) translateY(-3px);
+}
+.worm:hover span:nth-child(10) {
+  transform: rotate(5deg) translateY(2px);
+}
+.worm:hover span:nth-child(11) {
+  transform: rotate(-2deg) translateY(-4px);
+}
+.worm:hover span:nth-child(12) {
+  transform: rotate(4deg) translateY(3px);
+}
+.worm:hover span:nth-child(13) {
+  transform: rotate(-4deg) translateY(-2px);
+}
+.worm:hover span:nth-child(14) {
+  transform: rotate(5deg) translateY(4px);
+}
+.worm:hover span:nth-child(15) {
+  transform: rotate(-3deg) translateY(-3px);
+}
+.worm:hover span:nth-child(16) {
+  transform: rotate(4deg) translateY(2px);
+}
+.worm:hover span:nth-child(17) {
+  transform: rotate(-2deg) translateY(-4px);
+}
+.worm:hover span:nth-child(18) {
+  transform: rotate(3deg) translateY(3px);
+}
+.worm:hover span:nth-child(19) {
+  transform: rotate(-3deg) translateY(-2px);
+}
+.worm:hover span:nth-child(20) {
+  transform: rotate(4deg) translateY(5px);
+}
+.worm:hover span:nth-child(21) {
+  transform: rotate(-2deg) translateY(-3px);
+}
+.worm:hover span:nth-child(22) {
+  transform: rotate(3deg) translateY(4px);
+}
+.worm:hover span:nth-child(23) {
+  transform: rotate(-3deg) translateY(-2px);
+}
+.worm:hover span:nth-child(24) {
+  transform: rotate(5deg) translateY(3px);
+}
+.worm:hover span:nth-child(25) {
+  transform: rotate(-3deg) translateY(-4px);
+}
+.worm:hover span:nth-child(26) {
+  transform: rotate(2deg) translateY(3px);
+}
+.worm:hover span:nth-child(27) {
+  transform: rotate(-2deg) translateY(-3px);
+}
+.worm:hover span:nth-child(28) {
+  transform: rotate(4deg) translateY(4px);
+}
+.worm:hover span:nth-child(29) {
+  transform: rotate(-1deg) translateY(-2px);
+}
+.worm:hover span:nth-child(30) {
+  transform: rotate(3deg) translateY(5px);
+}
+.worm:hover span:nth-child(31) {
+  transform: rotate(-3deg) translateY(-2px);
+}
+
 .backgroundcolor{
 background-color:#ffffff;;
 }

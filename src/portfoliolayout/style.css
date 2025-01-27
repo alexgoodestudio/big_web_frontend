@@ -41,10 +41,26 @@ background-color:#ffffff;;
   color: #2A7D7F;
 }
 
-.text-dark-yellow{
+.text-purple-bold{
   color: #A87CA1;
+  font-weight: 500;
+}
+.btn-outline-warning {
+  border-color: #ffc107;
+  color: #A87CA1; 
+  transition: color 0.3s ease, border-color 0.3s ease; 
 }
 
+.btn-outline-warning:hover {
+  background-color: #A87CA1; 
+  border: none;
+  color: #ffffff;;
+}
+
+.text-purple-bold {
+  color: #A87CA1; 
+  font-weight: 500;
+}
 
 .PortfolioNav {
   background-color: #ced6e4;
