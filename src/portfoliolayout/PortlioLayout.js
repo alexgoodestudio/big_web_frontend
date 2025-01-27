@@ -54,7 +54,7 @@ function PortfolioLayout() {
             with 2.5 years of software engineering experience. I am most
             inclined to work on projects with a strong focus on front-end web
             development in React.js. Having spent 4 years immersing myself in
-            graphic design, working on no code websites before I shifted into
+            graphic design, and working on no code websites before I shifted into
             software development, I feel my strength lies in creating products
             that are centered around engaging, user-focused interfaces with a 
             strong emphasis on thoughtfully designed micro-interactions.
