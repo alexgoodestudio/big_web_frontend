@@ -4,7 +4,10 @@
 
 .home{
   background-color: #e1e9f6;
+
 }
+
+
 .service-link {
   text-decoration: none;
   color: #007bff; /* Use your desired link color */
@@ -37,6 +40,7 @@
   right: 50px;
   z-index: 1050; 
   border-radius: 5px;
+
 }
 
 .formMargin{
@@ -610,7 +614,6 @@ font-size: 34pt;
 .paddingDashText {
   padding: 120px;
   margin-bottom: 5%;
-
 }
 .bg1{
   border:#1f1f1e solid 1px;
@@ -630,6 +633,7 @@ font-size: 34pt;
 }
 
 
+
 @media only screen and (max-width: 600px) {
   
 
@@ -637,11 +641,6 @@ font-size: 34pt;
     visibility: hidden;
   }
 
-  .chatbotButton{
-    display: none;
-    visibility: hidden;
-    opacity: 0%;
-  }
 
   .mobileScale{
     scale: 90%;
@@ -755,6 +754,17 @@ font-size: 34pt;
   }
   .paddingDashText{
     scale: 70%;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .chatbotButton {
+    display: none; /* Hide by default */
+  }
+
+  .chatbotButton.show {
+    display: block; /* Show when scrolled halfway */
   }
 }
 
