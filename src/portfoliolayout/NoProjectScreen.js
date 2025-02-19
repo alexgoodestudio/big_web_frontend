@@ -31,7 +31,7 @@ function NoProjectScreen() {
       <p className="mb-5 mobileText ">
         I use these technologies throughout my projects.
       </p>
-        <div className="row text-center gy-4">
+        <div className="row text-center gy-4 ">
           
           {/* Node.js */}
           <div className="col-3 col-md-2">

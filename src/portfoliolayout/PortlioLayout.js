@@ -32,6 +32,7 @@ function PortfolioLayout() {
 
   return (
     <div className="bg-green min-h-screen p-1 text-white">
+
       <div className="row py-5 px-3">
         <div className="col-lg-1">
       
@@ -49,18 +50,18 @@ function PortfolioLayout() {
 
           <br />
           <p ref={paragraphRef} className="justify-text  mobileText">
-            Hi, my name is <span className="t3 bold">Alex Goode</span>. I am a
+            Hi, my name is <span className="purple bold ">Alex Goode</span>. I am a
             <span className="bold">
               {" "}
               Full-Stack Software Developer/ Web Designer
             </span>{" "}
             with 2.5 years of software engineering experience. I am most
-            inclined to work on projects with a strong focus on front-end web
+            excited to work on projects with a focus on front-end web
             development in React.js. Having spent 4 years immersing myself in
-            graphic design, and working on no code websites before I shifted into
+            graphic design, where I was working on no-code websites before I shifted into
             software development, I feel my strength lies in creating products
-            that are centered around engaging, user-focused interfaces with a 
-            strong emphasis on thoughtfully designed micro-interactions.
+            that are centered around engaging user-focused interfaces developed with a 
+            strong emphasis on thoughtfully crafted micro-interactions.
             <br />
             <br />
             Over the past few years, I have completed Chegg Skills (Thinkful)
@@ -72,7 +73,7 @@ function PortfolioLayout() {
             consists of <span className="underline2">React</span>,{" "}
             <span className="underline2">Node</span>,{" "}
             <span className="underline2">Express</span> and{" "}
-            <span className="underline2">PostgreSQL</span>. I am flexible and
+            <span className="underline2 ">PostgreSQL </span>. I am flexible and
             open to relocating for potential opportunities. US Citizen located
             in Columbia, South Carolina.
           </p>
@@ -83,14 +84,14 @@ function PortfolioLayout() {
           <img
             ref={imageRef}
             src={Img}
-            className="img-fluid fullWidth ipadWidth mobileWidth rounded2 mt-4 mb-4"
+            className=" floating-effect img-fluid fullWidth ipadWidth mobileWidth rounded2 mt-4 mb-4"
             alt="img"
           />
           <a
             ref={buttonRef}
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className=" btn-yellow py-2 px-4 my-3"
+            className=" btn-yellow  py-2 px-4 my-3"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >

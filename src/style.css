@@ -19,6 +19,27 @@
   background-color: #cab1c6;
 }
 
+.purple {
+  color: #cab1c6;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-10px); /* Start position (slightly lifted) */
+  }
+  50% {
+    transform: translateY(-15px); /* Move further up */
+  }
+  100% {
+    transform: translateY(-10px); /* End position (return to start) */
+  }
+}
+
+.floating-effect {
+  animation: float 2s ease-in-out infinite; /* Apply the animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
 .bg-green{
   background-color:  #06402b;
 
