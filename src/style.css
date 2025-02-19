@@ -4,16 +4,32 @@
   font-weight: normal; 
   font-style: normal; 
 }
-/* Look UP */
+@font-face {
+  font-family: 'SpaceMono'; 
+  src: url('./fonts/SpaceMono.ttf') format('opentype');
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'SpaceMonoBold'; 
+  src: url('./fonts/SpaceMono-Bold.ttf') format('opentype');
+  font-weight: normal; 
+  font-style: normal; 
+}
 .fandango {
   font-size: 400%;
   font-family: 'Fandango', sans-serif; 
+}
+.SpaceMono{
+  font-family: 'SpaceMono', sans-serif; 
+}
+.SpaceMonoBold{
+  font-family: 'SpaceMonoBold', sans-serif; 
 }
 
 .crayon {
   width: 62%;
 }
-
 
 .bg-purple {
   background-color: #cab1c6;
@@ -51,7 +67,7 @@
   transition: transform 0.2s ease-out;
 }
 
-/* Wave effect for hover */
+/* Worm effect for hover */
 .worm:hover span:nth-child(1) {
   transform: rotate(-5deg) translateY(-2px);
 }

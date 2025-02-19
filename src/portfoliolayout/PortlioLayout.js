@@ -38,7 +38,7 @@ function PortfolioLayout() {
       
         </div>
         <div className="col-lg-6">
-          <h1 ref={headerRef} className="worm">
+          <h1 ref={headerRef} className="worm SpaceMonoBold">
             {Array.from("Software Engineer").map((char, index) => (
               <span key={index}>{char === " " ? "\u00A0" : char}</span>
             ))}
@@ -49,8 +49,8 @@ function PortfolioLayout() {
           </h1>
 
           <br />
-          <p ref={paragraphRef} className="justify-text  mobileText">
-            Hi, my name is <span className="purple bold ">Alex Goode</span>. I am a
+          <p ref={paragraphRef} className="justify-text SpaceMono  mobileText">
+            Hi, my name is <span className="purple SpaceMonoBold ">Alex Goode</span>. I am a
             <span className="bold">
               {" "}
               Full-Stack Software Developer/ Web Designer
@@ -73,7 +73,7 @@ function PortfolioLayout() {
             consists of <span className="underline2">React</span>,{" "}
             <span className="underline2">Node</span>,{" "}
             <span className="underline2">Express</span> and{" "}
-            <span className="underline2 ">PostgreSQL </span>. I am flexible and
+            <span className="underline2">PostgreSQL </span>. I am flexible and
             open to relocating for potential opportunities. US Citizen located
             in Columbia, South Carolina.
           </p>
@@ -91,11 +91,11 @@ function PortfolioLayout() {
             ref={buttonRef}
             href="/resume/RESUME.pdf"
             download="RESUME.pdf"
-            className=" btn-yellow  py-2 px-4 my-3"
+            className=" btn-yellow SpaceMono py-2 px-4 my-3"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            {isHovered ? <span className="mx-2">Click Me!</span> : "My Resume"}
+            {isHovered ? <span className="mx-2 SpaceMono">Click Me!</span> : "My Resume"}
           </a>
         </div>
 

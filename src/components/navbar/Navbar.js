@@ -7,6 +7,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Import icons
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -30,37 +31,40 @@ function NavBar() {
         <span className="navbar-toggler-icon"></span>
       </button>
   
-      <div className="collapse navbar-collapse " id="navbarSupportedContent">
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mx-auto text-center">
-        <li className="nav-item">
-            <Link className="nav-link" to="/">Home</Link>
+          <li className="nav-item">
+            <Link className="nav-link SpaceMono" to="/">Home</Link>
           </li>
   
-          <li className="nav-item dropdown">
+          <li className="nav-item dropdown ">
             <button
-              className="nav-link dropdown-toggle"
+              className="nav-link SpaceMono dropdown-toggle"
               id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded={isOpen}
               onClick={toggleDropdown}
               style={{ background: 'none', border: 'none' }}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             >
-              Projects
+              {isHovered ? "You Rule" : "Projects"}
             </button>
+            
             <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-              <li><Link className="dropdown-item" to="/lemich-clinic">The Lemich Clinic</Link></li>
-              <li><Link className="dropdown-item" to="/neatfreak">Neatfreak Cleaning Services</Link></li>
-              <li><Link className="dropdown-item" to="/reservation">Book-Table-Now</Link></li>
+              <li><Link className="dropdown-item SpaceMono" to="/lemich-clinic">The Lemich Clinic</Link></li>
+              <li><Link className="dropdown-item SpaceMono" to="/neatfreak">Neatfreak Cleaning Services</Link></li>
+              <li><Link className="dropdown-item SpaceMono" to="/reservation">Book-Table-Now</Link></li>
               {/* <li><Link className="dropdown-item" to="/movie">We Love Movies</Link></li> */}
             </ul>
           </li>
+
           <li className="nav-item">
-            <Link className="nav-link" to="/education">Education</Link>
+            <Link className="nav-link SpaceMono" to="/education">Education</Link>
           </li>
         </ul>
   
-      
         <div className="d-flex align-items-center">
           <a 
             href="https://github.com/alexgoodestudio" 
