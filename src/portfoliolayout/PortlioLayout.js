@@ -13,6 +13,31 @@ function PortfolioLayout() {
   const imageRef = useRef(null);
   const buttonRef = useRef(null);
   const[isHovered, setIsHovered] = useState(false);
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768; // Check if it's a mobile device
+  
+    if (isMobile) {
+      setTimeout(() => {
+        gsap.to(headerRef.current.querySelectorAll("span"), {
+          y: (i) => (i % 2 === 0 ? -4 : 4),
+          rotation: (i) => (i % 2 === 0 ? -5 : 5),
+          duration: 0.5,
+          stagger: 0.05,
+          ease: "power3.out",
+        });
+  
+        setTimeout(() => {
+          gsap.to(headerRef.current.querySelectorAll("span"), {
+            y: 0, // Reset effect
+            rotation: 0,
+            duration: 0.5,
+            stagger: 0.05,
+            ease: "power3.inOut",
+          });
+        }, 2000); // Keep effect for 2 seconds
+      }, 2000); // Start animation after 2 seconds
+    }
+  }, []);
 
   useEffect(() => {
     const timeline = gsap.timeline({
