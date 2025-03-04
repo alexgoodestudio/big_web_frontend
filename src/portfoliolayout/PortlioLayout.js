@@ -64,24 +64,25 @@ function PortfolioLayout() {
         </div>
         <div className="col-lg-6">
           <h1 ref={headerRef} className="worm SpaceMonoBold">
-            {Array.from("Software Engineer").map((char, index) => (
+            {Array.from("Software engineer").map((char, index) => (
               <span key={index}>{char === " " ? "\u00A0" : char}</span>
             ))}
             <span className="grey mx-2"> | </span>
-            {Array.from("Web Designer").map((char, index) => (
+            {Array.from("Web designer").map((char, index) => (
               <span key={index + 100}>{char === " " ? "\u00A0" : char}</span>
             ))}
           </h1>
 
           <br />
           <p ref={paragraphRef} className="justify-text SpaceMono  mobileText">
+          Web Development, Design + SEO Services ✹ Helping new businesses increase traffic through creativity and optimized digital solutions. <br/><br/>
             Hi, my name is <span className="purple SpaceMonoBold ">Alex Goode</span>. I am a
             <span className="bold">
               {" "}
-              Full-Stack Software Developer/ Web Designer
+              Full-Stack Web Developer/ Designer
             </span>{" "}
-            with 2.5 years of software engineering experience. I am most
-            excited to work on projects with a focus on front-end web
+            with 3 years of software engineering experience. I am most
+            excited to work on projects with a focus on front-end
             development in React.js. Having spent 4 years immersing myself in
             graphic design, where I was working on no-code websites before I shifted into
             software development, I feel my strength lies in creating products

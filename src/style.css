@@ -1,25 +1,32 @@
-@font-face {
-  font-family: 'Fandango'; 
-  src: url('./fonts/Fandango.otf') format('opentype');
-  font-weight: normal; 
-  font-style: normal; 
-}
+
 @font-face {
   font-family: 'SpaceMono'; 
   src: url('./fonts/SpaceMono.ttf') format('opentype');
   font-weight: normal; 
   font-style: normal; 
 }
+
 @font-face {
   font-family: 'SpaceMonoBold'; 
   src: url('./fonts/SpaceMono-Bold.ttf') format('opentype');
   font-weight: normal; 
   font-style: normal; 
 }
-.fandango {
-  font-size: 400%;
-  font-family: 'Fandango', sans-serif; 
+
+@font-face {
+  font-family: 'neuemontreal-thin'; 
+  src: url('./fonts/ppneuemontreal-thin.otf') format('opentype');
+  font-weight: normal; 
+  font-style: normal; 
 }
+
+.neuemontreal-thin{
+  font-family: 'neuemontreal-thin', sans-serif; 
+  font-weight: 500;
+}
+
+
+
 .SpaceMono{
   font-family: 'SpaceMono', sans-serif; 
 }
