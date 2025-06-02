@@ -8,9 +8,9 @@ import {
   FaCss3Alt,
   FaBootstrap,
   FaGithub,
-
 } from "react-icons/fa";
 import {
+  SiNextdotjs,
   SiExpress,
   SiPostgresql,
   SiPostman,
@@ -25,14 +25,13 @@ import Footer from "./Footer";
 
 function NoProjectScreen() {
   return (
-    <div className=" text-white p-3 text-start">
+    <div className="text-white p-3 text-start">
       <div className="container">
-      <h4 className="mb-2  SpaceMonoBold">Tech Stack</h4>
-      <p className="mb-5 SpaceMono mobileText ">
-        I use these technologies throughout my projects.
-      </p>
-        <div className="row text-center gy-4 ">
-          
+        <h4 className="mb-2 SpaceMonoBold">Tech Stack</h4>
+        <p className="mb-5 SpaceMono mobileText">
+          I use these technologies throughout my projects.
+        </p>
+        <div className="row text-center gy-4">
           {/* Node.js */}
           <div className="col-3 col-md-2">
             <FaNodeJs size={60} className="mb-2 text-success" />
@@ -52,6 +51,11 @@ function NoProjectScreen() {
           <div className="col-3 col-md-2">
             <FaReact size={60} className="mb-2 text-info" />
             <h6 className="mobileText SpaceMono">React</h6>
+          </div>
+          {/* Next.js */}
+          <div className="col-3 col-md-2">
+            <SiNextdotjs size={60} className="mb-2 text-white" />
+            <h6 className="mobileText SpaceMono">Next.js</h6>
           </div>
           {/* PostgreSQL */}
           <div className="col-3 col-md-2">
@@ -103,17 +107,18 @@ function NoProjectScreen() {
             <SiGreensock size={60} className="mb-2 text-green-400" />
             <h6 className="mobileText SpaceMono">GSAP</h6>
           </div>
+          {/* GitHub */}
           <div className="col-3 col-md-2">
             <FaGithub size={60} className="mb-2 text-green-400" />
             <h6 className="mobileText SpaceMono">Github</h6>
           </div>
+          {/* Render */}
           <div className="col-3 col-md-2">
             <SiRender size={60} className="mb-2 text-green-400" />
             <h6 className="mobileText SpaceMono">Render</h6>
           </div>
         </div>
       </div>
-
       <Footer className="text-white" />
     </div>
   );

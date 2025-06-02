@@ -14,7 +14,7 @@ function PortfolioLayout() {
   const buttonRef = useRef(null);
   const[isHovered, setIsHovered] = useState(false);
   useEffect(() => {
-    const isMobile = window.innerWidth <= 768; // Check if it's a mobile device
+    const isMobile = window.innerWidth <= 7268; // Check if it's a mobile device
   
     if (isMobile) {
       setTimeout(() => {
@@ -57,10 +57,8 @@ function PortfolioLayout() {
 
   return (
     <div className="bg-green min-h-screen p-1 text-white">
-
       <div className="row py-5 px-3">
-        <div className="col-lg-1">
-      
+        <div className="col-lg-1">      
         </div>
         <div className="col-lg-6">
           <h1 ref={headerRef} className="worm SpaceMonoBold">
@@ -74,7 +72,7 @@ function PortfolioLayout() {
           </h1>
 
           <br />
-          <p ref={paragraphRef} className="justify-text SpaceMono  mobileText">
+          <p ref={paragraphRef} className="justify-text SpaceMono   mobileText">
           Web Development, Design + SEO Services ✹ Helping new businesses increase traffic through creativity and optimized digital solutions. <br/><br/>
             Hi, my name is <span className="purple SpaceMonoBold ">Alex Goode</span>. I am a
             <span className="bold">
